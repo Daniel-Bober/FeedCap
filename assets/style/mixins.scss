@@ -1,0 +1,33 @@
+
+@mixin nav-bar {
+  height: 140px;
+  padding: 0 75px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //background: $darkGray;
+
+  h1 {
+    font-size: $font-24px;
+    font-weight: normal;
+    margin: 0;
+  }
+  h2 {
+    font-size: $font-14px;
+    font-weight: normal;
+    margin: 0;
+    color: $pink;
+  }
+
+  .icon-logo {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+  }
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+}

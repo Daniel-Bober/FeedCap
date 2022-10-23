@@ -1,0 +1,42 @@
+
+@font-face {
+    font-family: quicksand-light;
+    src: url('../fonts/Quicksand-Light.ttf');
+}
+@font-face {
+    font-family: quicksand-regular;
+    src: url('../fonts/Quicksand-Regular.ttf');
+}
+@font-face {
+    font-family: quicksand-medium;
+    src: url('../fonts/Quicksand-Medium.ttf');
+}
+
+body, html {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: $mainDark;
+    margin: 0;
+    font-family: quicksand-regular, serif;
+    color: $offWhite;
+}
+
+span {
+    font-family: quicksand-regular, serif;
+    color: $offWhite;
+
+}
+
+input {
+
+}
+
+
+//hide scrollbar
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
