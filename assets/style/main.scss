@@ -31,6 +31,12 @@ a {
     color: $offWhite;
 }
 
+::placeholder {
+    font-family: quicksand-regular, serif;
+    font-weight: bold;
+    color: $gray;
+}
+
 
 //hide scrollbar
 body::-webkit-scrollbar {

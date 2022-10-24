@@ -1,8 +1,10 @@
 
 <template>
 <div class="nav-bar">
-  <img class="icon-logo" src="assets/images/svg/iconLogo.svg" alt="logo" draggable="false">
 
+  <NuxtLink to="/">
+    <img class="icon-logo" src="assets/images/svg/iconLogo.svg" alt="logo" draggable="false">
+  </NuxtLink>
 
   <NuxtLink class="login-btn" to="/login">Log in</NuxtLink>
 
@@ -16,6 +18,10 @@
 <style lang='scss' scoped>
 .nav-bar {
   @include nav-bar;
+}
+
+.icon-logo {
+  cursor: pointer;
 }
 
 .login-btn {
