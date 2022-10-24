@@ -1,7 +1,7 @@
 
 <template>
-  <div>
-    <NavBarDefault v-if="false"></NavBarDefault>
+  <div class="default-layout">
+    <NavBarDefault v-if="true"></NavBarDefault>
 
     <NavBarLogged v-else></NavBarLogged>
     <slot></slot>
@@ -13,5 +13,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+.default-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 </style>

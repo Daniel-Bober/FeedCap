@@ -13,8 +13,7 @@
 }
 
 body, html {
-    min-width: 100vw;
-    min-height: 100vh;
+    box-sizing: border-box;
     background: $mainDark;
     margin: 0;
     font-family: quicksand-regular, serif;
@@ -27,8 +26,9 @@ span {
 
 }
 
-input {
-
+a {
+    text-decoration: none;
+    color: $offWhite;
 }
 
 
