@@ -15,12 +15,12 @@
         <NuxtLink to="/forgot-password">Forgot password</NuxtLink>
       </div>
 
-      <NuxtLink to="comments-page" class="login-icon">
+      <NuxtLink to="profiles-page" class="login-icon">
         <img src="assets/images/icons/login_icon.svg" alt="login icon">
       </NuxtLink>
 
+      <NuxtLink class="signup-btn" to="/signup">Sign up</NuxtLink>
     </div>
-
   </div>
 </template>
 
@@ -63,10 +63,6 @@
     .password-input:focus {
       outline: none;
       border: 2px solid $lightGray;
-    }
-
-    ::placeholder {
-      color: $gray;
     }
 
     .email-input {
@@ -125,11 +121,9 @@
         transition: $time-hover-anim;
       }
     }
-
     .login-icon:hover img{
       transform: scale(1.07);
     }
-
     .login-icon:active img{
       transform: scale(1);
       transition: $time-click-anim;
