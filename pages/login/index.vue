@@ -1,6 +1,5 @@
 <template>
   <div class="login-page">
-
     <div class="login-section">
 
       <span class="header">Log in</span>
@@ -134,6 +133,18 @@
     .login-icon:active img{
       transform: scale(1);
       transition: $time-click-anim;
+    }
+
+
+    .signup-btn {
+      position: absolute;
+      right: 100px;
+      bottom: 50px;
+      font-size: $font-28px;
+      transition: $time-long-hover-anim;
+    }
+    .signup-btn:hover {
+      transform: scale(1.05);
     }
   }
 
