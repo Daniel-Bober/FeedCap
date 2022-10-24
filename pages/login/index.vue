@@ -2,7 +2,9 @@
   <div class="login-page">
 
     <div class="login-section">
+
       <span class="header">Log in</span>
+
       <input class="email-input" type="email" placeholder="Email">
       <input class="password-input" type="password" placeholder="Password">
 
@@ -14,11 +16,12 @@
         <NuxtLink to="/forgot-password">Forgot password</NuxtLink>
       </div>
 
-      <NuxtLink to="main-page" class="login-icon">
+      <NuxtLink to="comments-page" class="login-icon">
         <img src="assets/images/icons/login_icon.svg" alt="login icon">
       </NuxtLink>
 
     </div>
+
   </div>
 </template>
 
@@ -109,15 +112,11 @@
         }
       }
 
-
-
       a {
         color: $pink;
         transition: $time-hover-anim;
       }
     }
-
-
 
     .login-icon {
       margin-top: 85px;
