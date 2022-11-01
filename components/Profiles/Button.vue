@@ -27,5 +27,4 @@ const props = defineProps({
 .profile-button:hover {
   transform: scale(1.03);
 }
-
 </style>
