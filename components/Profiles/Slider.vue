@@ -5,7 +5,6 @@
         :name="profile"
     ></ProfilesButton>
 
-
     <svg class="left-arrow-icon" @click="previousProfilesPage" v-if="selectedPageNumber > 0" width="18" height="30" viewBox="0 0 12 19"
          xmlns="http://www.w3.org/2000/svg">
       <path
@@ -26,7 +25,6 @@
 const props = defineProps({
   profiles: Array
 });
-
 
 const selectedPageNumber = ref(0);
 
@@ -93,8 +91,5 @@ function previousProfilesPage() {
   .left-arrow-icon:active {
     transform: translateX(-5px) rotate(180deg);
   }
-
 }
-
-
 </style>

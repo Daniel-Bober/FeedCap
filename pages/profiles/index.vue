@@ -4,11 +4,10 @@
     <span class="header">Choose profile</span>
 
     <div class="selection-profiles-area">
-      <ProfilesSelection
+      <ProfilesSlider
           :profiles="profiles"
-      ></ProfilesSelection>
+      ></ProfilesSlider>
     </div>
-
 
     <NuxtLink class="add-button" to="/profiles/new-profile">New profile</NuxtLink>
   </div>
@@ -44,6 +43,7 @@ const profiles = ['burgir', 'Big Burger Bar', 'tekst', 'tekst2', 'coś', 'jeszcz
     border: 1px solid $gray;
     border-radius: 20px;
     padding: 8px 30px;
+    margin-bottom: 100px;
     transition: $time-hover-anim;
     user-select: none;
   }
