@@ -31,6 +31,12 @@ a {
     color: $offWhite;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 ::placeholder {
     font-family: quicksand-regular, serif;
     font-weight: bold;
