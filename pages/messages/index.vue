@@ -18,7 +18,7 @@
 
       <span class="customer-name">Kasia</span>
 
-      <span class="customer-message" role="textbox">Could use more tables with umbrellas outside and add more chairs and tables</span>
+      <span class="customer-message" role="textbox">Could use more tables with umbrellas outside and i write some shit to zająć more place</span>
 
       <span class="date">07.09.2022</span>
     </div>
@@ -40,11 +40,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 150px 0 200px 0;
   flex-grow: 1;
 
   .message-body {
-    width: 470px;
-    min-height: 200px;
+    width: 500px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
     border: 2px solid $gray;
     border-radius: 35px;
     position: relative;
@@ -60,7 +63,7 @@
 
       .list-mode-icon {
         fill: $lightGray;
-        margin: 12px 0 0 5px;
+        margin: 12px 0 0 10px;
         cursor: pointer;
         transition: $time-hover-anim;
       }
@@ -76,7 +79,7 @@
       }
 
       .messages-count {
-        margin-right: 5px;
+        margin-right: 15px;
 
         img {
           margin: 6px 5px 0 0;
@@ -97,15 +100,17 @@
     }
 
     .customer-message {
-      width: 360px;
+      width: 350px;
       font-size: $font-20px;
-      margin: 35px 0 0 35px;
+      margin: 25px 0 50px 35px;
     }
 
     .date {
       font-size: $font-14px;
       color: $gray;
-      margin: 20px 0 20px 35px;
+      position: absolute;
+      right: 40px;
+      bottom: 18px;
     }
   }
 
