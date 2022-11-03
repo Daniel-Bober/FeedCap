@@ -2,7 +2,7 @@
   <div class="nav-bar">
 
     <div class="left-group">
-      <img class="icon-logo" src="assets/images/svg/iconLogo.svg" alt="logo" draggable="false">
+      <img class="icon-logo" src="~/assets/images/svg/iconLogo.svg" alt="logo" draggable="false">
 
       <div class="profile-group">
 
@@ -19,12 +19,12 @@
         <div class="stats-icons">
 
           <div class="gifts-stats">
-            <img src="assets/images/icons/gift_yellow.svg" alt="gift icon">
+            <img src="~/assets/images/icons/gift_yellow.svg" alt="gift icon">
             <span>4</span>
           </div>
 
           <div class="messages-stats">
-            <img src="assets/images/icons/message_blue.svg" alt="comment icon">
+            <img src="~/assets/images/icons/message_blue.svg" alt="comment icon">
             <span>37</span>
           </div>
 

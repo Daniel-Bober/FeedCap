@@ -4,11 +4,11 @@
     <section class="head-section">
 
       <div class="logo-section">
-        <img class="text-logo" src="assets/images/svg/textLogo.svg" alt="logo">
+        <img class="text-logo" src="~/assets/images/svg/textLogo.svg" alt="logo">
         <p>Fast and easy way to collect ideas and thoughts from your clients</p>
       </div>
 
-      <img class="devices-image" src="assets/images/png/devices.png" alt="devices image">
+      <img class="devices-image" src="~/assets/images/png/devices.png" alt="devices image">
 
     </section>
 

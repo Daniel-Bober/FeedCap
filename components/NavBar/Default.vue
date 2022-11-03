@@ -3,7 +3,7 @@
 <div class="nav-bar">
 
   <NuxtLink to="/">
-    <img class="icon-logo" src="assets/images/svg/iconLogo.svg" alt="logo" draggable="false">
+    <img class="icon-logo" src="~/assets/images/svg/iconLogo.svg" alt="logo" draggable="false">
   </NuxtLink>
 
   <NuxtLink class="login-btn" to="/login">Log in</NuxtLink>

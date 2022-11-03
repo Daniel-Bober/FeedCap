@@ -14,7 +14,7 @@
 
 
       <NuxtLink to="profiles" class="signup-icon">
-        <img src="assets/images/icons/login_icon.svg" alt="sign up icon">
+        <img src="~/assets/images/icons/login_icon.svg" alt="sign up icon">
       </NuxtLink>
 
 
