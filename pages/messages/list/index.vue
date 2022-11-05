@@ -49,8 +49,8 @@
     width: 42px;
     fill: $lightGray;
     position: absolute;
-    left: 20%;
-    top: 40%;
+    left: 30%;
+    top: 45%;
     cursor: pointer;
     transition: $time-hover-anim;
   }

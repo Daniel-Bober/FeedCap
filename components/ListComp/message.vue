@@ -62,9 +62,11 @@
       width: 32px;
     }
   }
+
   .like-button:hover {
     transform: scale(1.07);
   }
+
   .like-button:active {
     transform: scale(1);
     transition: $time-click-anim;
@@ -80,6 +82,7 @@
       transition: $time-long-hover-anim;
     }
   }
+
   .dots-menu:hover {
     svg {
       fill: $offWhite;

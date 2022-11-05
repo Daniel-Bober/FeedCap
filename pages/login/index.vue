@@ -94,7 +94,6 @@
           border: 2px solid $gray;
           border-radius: 5px;
           outline: none;
-
         }
 
         input[type='checkbox']:checked::after{
@@ -128,7 +127,6 @@
       transform: scale(1);
       transition: $time-click-anim;
     }
-
 
     .signup-btn {
       position: absolute;
