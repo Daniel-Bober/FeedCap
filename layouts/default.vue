@@ -1,7 +1,7 @@
 
 <template>
   <div class="default-layout">
-    <NavBarDefault v-if="true"></NavBarDefault>
+    <NavBarDefault v-if="false"></NavBarDefault>
 
     <NavBarLogged v-else></NavBarLogged>
     <slot></slot>
