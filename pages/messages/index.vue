@@ -52,7 +52,6 @@
     border-radius: 35px;
     position: relative;
 
-
     .top-icons-group {
       width: 100%;
       display: flex;
@@ -83,7 +82,6 @@
 
         img {
           margin: 6px 5px 0 0;
-
         }
 
         span {

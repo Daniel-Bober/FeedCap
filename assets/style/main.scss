@@ -37,6 +37,11 @@ button {
     cursor: pointer;
 }
 
+input {
+    background: none;
+    outline: none;
+}
+
 ::placeholder {
     font-family: quicksand-regular, serif;
     font-weight: bold;
