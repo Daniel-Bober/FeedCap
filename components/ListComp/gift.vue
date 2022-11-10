@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="gift-body" to="/gifts/_code">
+  <NuxtLink class="gift-body" to="/gifts/code">
 
     <div class="customer-group">
       <span class="customer-name">Tomek</span>

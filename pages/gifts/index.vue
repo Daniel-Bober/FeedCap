@@ -3,7 +3,7 @@
 
     <div class="wrapper">
       <span class="header">Gift codes</span>
-      <input>
+      <input type="text" placeholder="search">
     </div>
 
 
