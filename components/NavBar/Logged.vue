@@ -60,7 +60,7 @@
         </NuxtLink>
       </div>
 
-      <NuxtLink to="/" class="account-group">
+      <NuxtLink to="/account" class="account-group">
         <span class="user-name">Ubier Bolt</span>
         <span class="my-account">My Account</span>
       </NuxtLink>
@@ -69,9 +69,11 @@
   </div>
 </template>
 
+
 <script setup lang='ts'>
 
 </script>
+
 
 <style lang='scss' scoped>
 .nav-bar {
@@ -144,10 +146,7 @@
 
     }
   }
-
-
 }
-
 
 .right-group {
   display: flex;
@@ -212,6 +211,4 @@
 
 
 }
-
-
 </style>

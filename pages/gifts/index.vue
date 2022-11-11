@@ -6,7 +6,6 @@
       <input type="text" placeholder="search">
     </div>
 
-
     <div class="gifts-list">
       <ListCompGift></ListCompGift>
       <ListCompGift></ListCompGift>
@@ -15,15 +14,16 @@
       <ListCompGift></ListCompGift>
       <ListCompGift></ListCompGift>
       <ListCompGift></ListCompGift>
-
     </div>
 
   </div>
 </template>
 
+
 <script setup lang='ts'>
 
 </script>
+
 
 <style lang='scss' scoped>
 .gifts-page {
@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 
   .wrapper {
     display: flex;
@@ -60,7 +59,6 @@
       background-position: 15px;
     }
   }
-
 
   .gifts-list {
     height: 100%;
