@@ -7,7 +7,10 @@
 
     <span class="date">07.09.2022</span>
     
-    <button class="like-button"><img src="~/assets/images/icons/heart_pink.svg" alt="like button"></button>
+    <button class="like-gift-button">
+      <img v-if="likedMode" src="~/assets/images/icons/heart_pink.svg" alt="like button">
+      <img v-else src="~/assets/images/icons/gift_pink.svg" alt="gift button">
+    </button>
 
 
     <button class="dots-menu">
@@ -19,9 +22,16 @@
   </div>
 </template>
 
-<script setup lang='ts'>
 
+<script setup lang='ts'>
+const props = defineProps({
+  likedMode: {
+    type: Boolean,
+    default: true
+  }
+})
 </script>
+
 
 <style lang='scss' scoped>
 .message-body {
@@ -52,7 +62,7 @@
     margin: 10px 0 20px 35px;
   }
 
-  .like-button {
+  .like-gift-button {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -63,11 +73,11 @@
     }
   }
 
-  .like-button:hover {
+  .like-gift-button:hover {
     transform: scale(1.07);
   }
 
-  .like-button:active {
+  .like-gift-button:active {
     transform: scale(1);
     transition: $time-click-anim;
   }
