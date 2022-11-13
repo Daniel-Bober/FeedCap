@@ -2,10 +2,11 @@
   <div class="liked-messages-list-page">
 
     <ScrollList>
-      <list-comp-message :liked-mode="false"></list-comp-message>
-      <list-comp-message :liked-mode="false"></list-comp-message>
-      <list-comp-message :liked-mode="false"></list-comp-message>
-      <list-comp-message :liked-mode="false"></list-comp-message>
+      <ListCompMessage :liked-mode="false"></ListCompMessage>
+      <ListCompMessage :liked-mode="false"></ListCompMessage>
+      <ListCompMessage :liked-mode="false"></ListCompMessage>
+      <ListCompMessage :liked-mode="false"></ListCompMessage>
+      <ListCompMessage :liked-mode="false"></ListCompMessage>
     </ScrollList>
 
   </div>
