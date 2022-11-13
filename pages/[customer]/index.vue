@@ -67,23 +67,18 @@
 </template>
 
 <script setup lang='ts'>
-import {onMounted, ref} from "#imports";
+import {ref} from "#imports";
 
   let mode = ref(1)
 
   function changeModeUp() {
     mode.value += 1
-    console.log(mode.value)
   }
 
   function changeModeDown() {
     mode.value -=1
-    console.log(mode)
   }
 
-  onMounted(()=> {
-    console.log(mode)
-  })
 </script>
 
 <style lang='scss' scoped>
@@ -211,7 +206,6 @@ import {onMounted, ref} from "#imports";
       }
     }
 
-
     .next-button:hover {
       svg {
         transform: translateX(2px);
@@ -273,7 +267,6 @@ import {onMounted, ref} from "#imports";
       }
 
       .send-button {
-
         padding: 8px 34px;
         font-size: $font-18px;
         color: $pink;
