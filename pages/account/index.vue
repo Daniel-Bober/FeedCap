@@ -1,28 +1,37 @@
 <template>
-<div class="account-page">
+  <div class="account-page">
 
-  <div class="main-section">
-    <span class="account-name">Ubier Bolt</span>
+    <div class="main-section">
+      <span class="account-name">Ubier Bolt</span>
 
-    <div class="email-group">
-      <span class="header">Email</span>
-      <span class="email">ubier.bolt@email.com</span>
+      <div class="email-group">
+        <span class="header">Email</span>
+        <span class="email">ubier.bolt@email.com</span>
+      </div>
+
+      <div class="password-group">
+        <span class="header">Password</span>
+        <span class="password">●●●●●●●●●●</span>
+        <NuxtLink class="change-password-button" to="/account/change-password">Change password</NuxtLink>
+      </div>
+
+      <button class="log-out-button" @click="logOut">Log out</button>
     </div>
 
-    <div class="password-group">
-      <span class="header">Password</span>
-      <span class="password">●●●●●●●●●●</span>
-      <NuxtLink class="change-password-button" to="/account/change-password">Change password</NuxtLink>
-    </div>
-
-    <button class="log-out-button">Log out</button>
   </div>
-
-</div>
 </template>
 
 <script setup lang='ts'>
 
+
+const logOut = async () => {
+  await logOutUser()
+}
+
+
+definePageMeta({
+  middleware: 'auth'
+})
 </script>
 
 <style lang='scss' scoped>
@@ -43,7 +52,7 @@
     }
 
     .email-group,
-    .password-group{
+    .password-group {
       width: 100%;
       margin-bottom: 28px;
 
@@ -56,7 +65,7 @@
       }
 
       .email,
-      .password{
+      .password {
         font-size: $font-20px;
         display: block;
       }
