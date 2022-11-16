@@ -23,24 +23,11 @@ export default defineNuxtConfig({
                 ],
             },
         ],
-        // [
-        //     '@nuxtjs/firebase',
-        //     {
-        //         config: {
-        //             firebaseConfig: {
-        //                 apiKey: "AIzaSyAN7Za7vxiJibO2QpD1in0UIRuwqTJLUN4",
-        //                 authDomain: "feedcap.firebaseapp.com",
-        //                 projectId: "feedcap",
-        //                 storageBucket: "feedcap.appspot.com",
-        //                 messagingSenderId: "389528107111",
-        //                 appId: "1:389528107111:web:b2ae49eb1416ac4f6d7cc2",
-        //             }
-        //         },
-        //         services: {
-        //             auth: true,
-        //         }
-        //     }
-        // ],
-
-    ]
+    ],
+    runtimeConfig: {
+        apiSecret: process.env.FIREBASE_API_KEY,
+        public: {
+            apiBase: process.env.FIREBASE_API_KEY,
+        }
+    },
 })
