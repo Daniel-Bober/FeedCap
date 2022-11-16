@@ -1,19 +1,24 @@
 <template>
-<div class="change-password-page">
+  <div class="change-password-page">
 
-  <span class="header">Change password</span>
+    <span class="header">Change password</span>
 
-  <input type="password" placeholder="old password">
-  <input type="password" placeholder="new password">
-  <input type="password" placeholder="confirm password">
+    <input type="password" placeholder="old password">
+    <input type="password" placeholder="new password">
+    <input type="password" placeholder="confirm password">
 
-  <button class="change-button">Change</button>
+    <button class="change-button">Change</button>
 
-</div>
+  </div>
 </template>
 
 <script setup lang='ts'>
 
+
+
+definePageMeta({
+  middleware: 'auth'
+})
 </script>
 
 <style lang='scss' scoped>

@@ -16,6 +16,11 @@
 <script setup lang='ts'>
 const profiles = ['burgir', 'Big Burger Bar', 'tekst', 'tekst2', 'coś', 'jeszcze coś innego', 'ostatnie']
 
+
+
+definePageMeta({
+  middleware: 'auth'
+})
 </script>
 
 <style lang='scss' scoped>

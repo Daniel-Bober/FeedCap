@@ -14,6 +14,10 @@
 <script setup lang='ts'>
 import ScrollList from "~/components/ListComp/ScrollList.vue";
 
+
+definePageMeta({
+  middleware: 'auth'
+})
 </script>
 
 <style lang='scss' scoped>
