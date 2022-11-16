@@ -4,8 +4,8 @@
 
       <span class="header">Log in</span>
 
-      <input class="email-input" type="email" placeholder="Email">
-      <input class="password-input" type="password" placeholder="Password">
+      <input class="email-input" v-model="email" type="email" placeholder="Email">
+      <input class="password-input" v-model="password" type="password" placeholder="Password">
 
       <div class="login-options">
         <label class="check-box-wrap">
@@ -15,7 +15,7 @@
         <NuxtLink to="/forgot-password">Forgot password</NuxtLink>
       </div>
 
-      <NuxtLink to="profiles" class="login-icon">
+      <NuxtLink class="login-icon" @click="logIn">
         <img src="~/assets/images/icons/login_icon.svg" alt="login icon">
       </NuxtLink>
 
@@ -25,6 +25,23 @@
 </template>
 
 <script setup lang='ts'>
+import {useUserGlobalState} from "~/stores/user";
+import {ref} from "#imports";
+import {useRouter} from "#app";
+
+const router = useRouter;
+const errorMessage = ref();
+const username = ref();
+const email = ref();
+const password = ref();
+
+const logIn = async () => {
+  await logInUser(email.value, password.value)
+};
+
+const userGlobalState = useUserGlobalState();
+const firebaseUser = useFirebaseUser()
+
 
 </script>
 
@@ -96,7 +113,7 @@
           outline: none;
         }
 
-        input[type='checkbox']:checked::after{
+        input[type='checkbox']:checked::after {
           content: '\2714';
           font-size: 13px;
           position: absolute;
@@ -120,10 +137,12 @@
         transition: $time-hover-anim;
       }
     }
-    .login-icon:hover img{
+
+    .login-icon:hover img {
       transform: scale(1.07);
     }
-    .login-icon:active img{
+
+    .login-icon:active img {
       transform: scale(1);
       transition: $time-click-anim;
     }
@@ -135,6 +154,7 @@
       font-size: $font-28px;
       transition: $time-long-hover-anim;
     }
+
     .signup-btn:hover {
       transform: scale(1.05);
     }
