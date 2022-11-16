@@ -6,14 +6,14 @@
       <span class="header">Sign up</span>
 
       <div class="inputs-group">
-        <input class="username-input" type="text" placeholder="Username">
-        <input class="email-input" type="email" placeholder="Email">
-        <input class="password-input" type="password" placeholder="Password">
+        <input class="username-input" v-model="username" type="text" placeholder="Username">
+        <input class="email-input" v-model="email" type="email" placeholder="Email">
+        <input class="password-input" v-model="password" type="password" placeholder="Password">
         <input class="password-input" type="password" placeholder="Confirm password">
       </div>
 
 
-      <NuxtLink to="profiles" class="signup-icon">
+      <NuxtLink class="signup-icon" @click="signUp">
         <img src="~/assets/images/icons/login_icon.svg" alt="sign up icon">
       </NuxtLink>
 
@@ -25,6 +25,18 @@
 </template>
 
 <script setup lang='ts'>
+import {createUser, ref} from "#imports";
+import {useRouter} from "#app";
+
+const router = useRouter
+const username = ref()
+const email = ref()
+const password = ref()
+
+const signUp = async () => {
+  await createUser(email.value, password.value)
+
+}
 
 </script>
 
@@ -78,9 +90,11 @@
         transition: $time-hover-anim;
       }
     }
+
     .signup-icon:hover img {
       transform: scale(1.07);
     }
+
     .signup-icon:active img {
       transform: scale(1);
       transition: $time-click-anim;
@@ -94,6 +108,7 @@
       font-size: $font-28px;
       transition: $time-long-hover-anim;
     }
+
     .login-btn:hover {
       transform: scale(1.05);
     }
