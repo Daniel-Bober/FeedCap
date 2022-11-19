@@ -1,7 +1,6 @@
-
 <template>
   <div class="default-layout">
-    <NavBarDefault v-if="false"></NavBarDefault>
+    <NavBarDefault v-if="!store.isLogged"></NavBarDefault>
 
     <NavBarLogged v-else></NavBarLogged>
     <slot></slot>
@@ -10,7 +9,9 @@
 
 
 <script setup lang="ts">
+import {useUserGlobalState} from "~/stores/user";
 
+const store = useUserGlobalState()
 </script>
 
 
