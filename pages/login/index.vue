@@ -43,6 +43,9 @@ const userGlobalState = useUserGlobalState();
 const firebaseUser = useFirebaseUser()
 
 
+definePageMeta({
+  middleware: 'notAuth'
+})
 </script>
 
 <style lang='scss' scoped>

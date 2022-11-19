@@ -38,6 +38,10 @@ const signUp = async () => {
 
 }
 
+
+definePageMeta({
+  middleware: 'notAuth'
+})
 </script>
 
 <style lang='scss' scoped>

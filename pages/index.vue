@@ -26,9 +26,11 @@
 </template>
 
 <script lang="ts">
-export default {
-  name: "index"
-}
+
+
+definePageMeta({
+  middleware: 'notAuth'
+})
 </script>
 
 <style lang="scss" scoped>
