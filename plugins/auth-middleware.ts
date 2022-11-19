@@ -1,9 +1,11 @@
+import {getAuth} from "firebase/auth";
+
 export default defineNuxtPlugin(() => {
     addRouteMiddleware('auth', () => {
-        const { $auth } = useNuxtApp()
-
-        if(!$auth?. currentUser?.uid) {
-            return abortNavigation()
+        const isLogged = JSON.parse(localStorage.getItem('isLogged'))
+        if(!isLogged) {
+            return navigateTo('/login')
         }
     })
+
 })
