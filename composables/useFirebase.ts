@@ -8,29 +8,30 @@ import {useUserGlobalState} from "~/stores/user";
 
 export const createUser = async (email, password)=> {
     const auth = getAuth();
-    const credentials = await createUserWithEmailAndPassword(auth, email, password)
-        .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-        });
-    return credentials
-}
-
-export const logInUser = async (email, password) => {
-    const auth = getAuth();
-    const store = useUserGlobalState()
-
-    const credentials = await signInWithEmailAndPassword(auth, email, password)
+    await createUserWithEmailAndPassword(auth, email, password)
         .then(() => {
-            navigateTo('/profiles')
-            store.setStatusToLogged()
+            navigateTo('/login');
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
         });
+}
 
-    return credentials
+export const logInUser = async (email, password) => {
+    const auth = getAuth();
+    const store = useUserGlobalState();
+
+    await signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            navigateTo('/profiles');
+            store.setStatusToLogged();
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(error.message);
+        });
 }
 
 export const logOutUser = async () => {
