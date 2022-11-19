@@ -1,10 +1,9 @@
 import {defineStore} from "pinia";
-import {ref} from "#imports";
 
 export const useUserGlobalState = defineStore('userState', {
     state: () => {
         return {
-            isLogged: ref(JSON.parse(localStorage.getItem('isLogged'))),
+            isLogged: JSON.parse(localStorage.getItem('isLogged')),
         };
     },
     getters: {},
