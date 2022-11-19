@@ -4,6 +4,7 @@ import {
     signInWithEmailAndPassword,
     onAuthStateChanged
 } from "firebase/auth";
+import {useUserGlobalState} from "~/stores/user";
 
 export const createUser = async (email, password)=> {
     const auth = getAuth();
@@ -12,43 +13,44 @@ export const createUser = async (email, password)=> {
             const errorCode = error.code;
             const errorMessage = error.message;
         });
-    console.log('user created')
     return credentials
 }
 
-export const logInUser = async (email, password)=> {
+export const logInUser = async (email, password) => {
     const auth = getAuth();
+    const store = useUserGlobalState()
+
     const credentials = await signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            navigateTo('/profiles')
+            store.setStatusToLogged()
+        })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
         });
 
-    console.log('user log in')
     return credentials
 }
 
-export const logOutUser = async ()=> {
+export const logOutUser = async () => {
     const auth = getAuth();
     await auth.signOut();
-    console.log('user log out')
+    const store = useUserGlobalState();
+
+    store.setStatusToLoggedOut();
+    navigateTo('/');
 }
 
-export const initUser = async ()=> {
+export const initUser = async () => {
     const auth = getAuth();
     const firebaseUser = useFirebaseUser();
     // @ts-ignore
-    firebaseUser.value = auth.currentUser
+    firebaseUser.value = auth.currentUser;
 
     onAuthStateChanged(auth, (user) => {
-        if (user) {
-
-        } else {
-
-        }
         // @ts-ignore
         firebaseUser.value = user;
-        console.log( firebaseUser.value)
     });
 }
 
