@@ -5,6 +5,7 @@ import {
     onAuthStateChanged
 } from "firebase/auth";
 import {useUserGlobalState} from "~/stores/user";
+import {useGlobalLoginError} from "~/stores/loginError";
 
 export const createUser = async (email, password)=> {
     const auth = getAuth();
@@ -18,19 +19,28 @@ export const createUser = async (email, password)=> {
         });
 }
 
+
 export const logInUser = async (email, password) => {
     const auth = getAuth();
-    const store = useUserGlobalState();
+    const globalState = useUserGlobalState();
+    const globalLoginError = useGlobalLoginError();
 
     await signInWithEmailAndPassword(auth, email, password)
         .then(() => {
             navigateTo('/profiles');
-            store.setStatusToLogged();
+            globalState.setStatusToLogged();
+
+            if(globalLoginError) {
+                globalLoginError.resetError()
+            }
         })
         .catch((error) => {
             const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(error.message);
+
+            if(errorCode) {
+                globalLoginError.setError(errorCode)
+
+            }
         });
 }
 
