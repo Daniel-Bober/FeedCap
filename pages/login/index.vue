@@ -4,8 +4,10 @@
 
       <span class="header">Log in</span>
 
-      <input class="email-input" v-model="email" type="email" placeholder="Email">
-      <input class="password-input" v-model="password" type="password" placeholder="Password">
+      <span class="errorMessage" v-if="errorMessage">{{errorMessage}}</span>
+
+      <input :class="emailInputClassName" v-model="email" type="email" placeholder="Email">
+      <input :class="passwordInputClassName" v-model="password" type="password" placeholder="Password">
 
       <div class="login-options">
         <label class="check-box-wrap">
@@ -25,12 +27,10 @@
 </template>
 
 <script setup lang='ts'>
-import {useUserGlobalState} from "~/stores/user";
+import {useGlobalLoginError} from "~/stores/loginError";
 import {ref} from "#imports";
-import {useRouter} from "#app";
 
-const router = useRouter;
-const errorMessage = ref();
+
 const username = ref();
 const email = ref();
 const password = ref();
@@ -39,8 +39,42 @@ const logIn = async () => {
   await logInUser(email.value, password.value)
 };
 
-const userGlobalState = useUserGlobalState();
-const firebaseUser = useFirebaseUser()
+
+const globalLoginError = useGlobalLoginError();
+const emailError = 'wrong email';
+const passwordError = 'wrong password';
+
+const errorMessage = computed(() => {
+  if(globalLoginError.error?.endsWith('found')) {
+    return emailError
+  }
+  else if (globalLoginError.error?.endsWith('password')) {
+    return passwordError
+  }
+  else {
+    return null
+  }
+})
+
+const emailInputClassName = computed(() => {
+  if(globalLoginError.error?.endsWith('found')) {
+    return 'email-input error'
+  }
+  else {
+    return 'email-input'
+  }
+})
+
+const passwordInputClassName = computed(() => {
+  if(globalLoginError.error?.endsWith('password')) {
+    return 'password-input error'
+  }
+  else {
+    return 'password-input'
+  }
+})
+
+
 
 
 definePageMeta({
@@ -67,6 +101,12 @@ definePageMeta({
       margin-bottom: 95px;
     }
 
+    .errorMessage {
+      color: $red;
+      position: absolute;
+      top: 350px;
+    }
+
     .email-input,
     .password-input {
       width: 230px;
@@ -87,6 +127,23 @@ definePageMeta({
 
     .email-input {
       margin-bottom: 45px;
+    }
+
+    .email-input:-webkit-autofill,
+    .password-input:-webkit-autofill{
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: $offWhite !important;
+    }
+
+    .email-input.error,
+    .password-input.error {
+      border: 2px solid $red;
+    }
+
+    .email-input.error:focus,
+    .password-input.error:focus {
+      outline: none;
+      border: 2px solid $red;
     }
 
     .login-options {
