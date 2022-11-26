@@ -54,7 +54,7 @@ definePageMeta({
 
     .reward {
       margin-bottom: 50px;
-      font-size: $font-48px;
+      font-size: $font-72px;
       color: $pink;
     }
 

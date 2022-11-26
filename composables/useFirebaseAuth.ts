@@ -2,15 +2,16 @@ import {
     getAuth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
-    onAuthStateChanged
 } from "firebase/auth";
 import {useUserGlobalState} from "~/stores/user";
 import {useGlobalLoginError} from "~/stores/loginError";
+import {useMainStore} from "~/stores/mainStore";
 
-export const createUser = async (email, password)=> {
-    const auth = getAuth();
-    await createUserWithEmailAndPassword(auth, email, password)
-        .then(() => {
+export const signUpUser = async (email, password, username)=> {
+    const { $auth } = useNuxtApp();
+    await createUserWithEmailAndPassword($auth, email, password)
+        .then( async () => {
+            await initUser(email, username);  //init user to firestore
             navigateTo('/login');
         })
         .catch((error) => {
@@ -19,13 +20,12 @@ export const createUser = async (email, password)=> {
         });
 }
 
-
 export const logInUser = async (email, password) => {
-    const auth = getAuth();
+    const { $auth } = useNuxtApp();
     const globalState = useUserGlobalState();
     const globalLoginError = useGlobalLoginError();
 
-    await signInWithEmailAndPassword(auth, email, password)
+    await signInWithEmailAndPassword($auth, email, password)
         .then(() => {
             navigateTo('/profiles');
             globalState.setStatusToLogged();
@@ -45,27 +45,27 @@ export const logInUser = async (email, password) => {
 }
 
 export const logOutUser = async () => {
-    const auth = getAuth();
-    await auth.signOut();
-    const store = useUserGlobalState();
+    const { $auth } = useNuxtApp();
+    await $auth.signOut();
+    const globalState = useUserGlobalState();
+    const mainStore = useMainStore()
 
-    store.setStatusToLoggedOut();
+    globalState.setStatusToLoggedOut();
+    mainStore.resetProfile();
     navigateTo('/');
 }
 
-export const initUser = async () => {
-    const auth = getAuth();
-    const firebaseUser = useFirebaseUser();
-    // @ts-ignore
-    firebaseUser.value = auth.currentUser;
 
-    onAuthStateChanged(auth, (user) => {
-        // @ts-ignore
-        firebaseUser.value = user;
-    });
-}
-
-
+export const getCurrentUser = () => {
+    const { $auth } = useNuxtApp();
+    return new Promise((res, reject) => {
+        $auth.onAuthStateChanged((user) => {
+            if(user) {
+                return res(user)
+            }
+        })
+    })
+};
 
 
 
