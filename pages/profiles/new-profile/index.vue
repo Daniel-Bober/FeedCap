@@ -4,7 +4,7 @@
   <span class="header">New profile</span>
 
   <div class="input-group">
-    <input placeholder="Profile name">
+    <input placeholder="Profile name" v-model="profileName">
 
     <NuxtLink class="back-button" to="./">
       <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -13,13 +13,20 @@
   </div>
 
 
-  <button class="create-button">Create</button>
+  <button class="create-button" @click="create">Create</button>
 
 </div>
 </template>
 
 <script setup lang='ts'>
 
+const profileName = ref();
+
+const create = async () => {
+  await createProfile(profileName.value);
+  navigateTo('./');
+  profileName.value = '';
+}
 
 
 definePageMeta({
