@@ -1,9 +1,12 @@
 export default defineNuxtPlugin(() => {
     addRouteMiddleware('notAuth', () => {
-        const isLogged = JSON.parse(localStorage.getItem('isLogged'))
+        const isLogged = JSON.parse(localStorage.getItem('isLogged'));
+        const selectedProfile = JSON.parse(localStorage.getItem('selectedProfile'));
+
         if (isLogged) {
-            return navigateTo('/messages')
+            if(selectedProfile) {
+                return navigateTo('/messages')
+            }
         }
     })
-
 })
