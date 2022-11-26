@@ -14,9 +14,8 @@
 </template>
 
 <script setup lang='ts'>
-const profiles = ['burgir', 'Big Burger Bar', 'tekst', 'tekst2', 'coś', 'jeszcze coś innego', 'ostatnie']
 
-
+const profiles = await getProfiles();
 
 definePageMeta({
   middleware: 'auth'
@@ -55,6 +54,7 @@ definePageMeta({
 
   .add-button:hover {
     transform: scale(1.05);
+    border: 1px solid $lightGray;
   }
 }
 </style>
