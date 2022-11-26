@@ -6,7 +6,7 @@
       <span class="header">Sign up</span>
 
       <div class="inputs-group">
-        <input class="username-input" v-model="username" type="text" placeholder="Username">
+        <input class="username-input" v-model="username" type="text" placeholder="Username" spellcheck="false">
         <input class="email-input" v-model="email" type="email" placeholder="Email">
         <input class="password-input" v-model="password" type="password" placeholder="Password">
         <input class="password-input" type="password" placeholder="Confirm password">
@@ -25,16 +25,14 @@
 </template>
 
 <script setup lang='ts'>
-import {createUser, ref} from "#imports";
-import {useRouter} from "#app";
 
-const router = useRouter
 const username = ref()
 const email = ref()
 const password = ref()
 
 const signUp = async () => {
-  await createUser(email.value, password.value)
+  await signUpUser(email.value, password.value, username.value);
+  navigateTo('/login');
 
 }
 
