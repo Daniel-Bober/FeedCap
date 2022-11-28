@@ -12,32 +12,40 @@
 
         <span class="messages-count">
           <img src="~/assets/images/icons/message_gray.svg" alt="message icon">
-          <span>15</span>
+          <span>{{ messages.length }}</span>
         </span>
       </div>
 
-      <span class="customer-name">Kasia</span>
+      <span class="customer-name">{{ messagesData[0][0].customerName }}</span>
 
-      <span class="customer-message" role="textbox">Could use more tables with umbrellas outside and i write some shit to zająć more place</span>
+      <span class="customer-message" role="textbox">{{ messagesData[0][0].message }}</span>
 
-      <span class="date">07.09.2022</span>
+      <span class="date">{{ messagesData[0][0].date }}</span>
     </div>
 
     <div class="buttons-group">
       <button class="delete-button"><img src="~/assets/images/icons/delete.svg" alt="delete icon"></button>
-      <button class="like-button"><img src="~/assets/images/icons/heart_pink.svg" alt="heart icon"></button>
+      <button class="like-button" @click="moveToLiked"><img src="~/assets/images/icons/heart_pink.svg" alt="heart icon"></button>
     </div>
   </div>
 </template>
 
 <script setup lang='ts'>
+const messagesData = ref(await getCustomersMessages(1));// 1-'messages', 2-'likedMessages',
+const messages = ref(messagesData.value[0])
+const messagesID = ref(messagesData.value[1])
 
-
+const moveToLiked = async() => {
+  await moveMessageToLiked(messages.value[0], messagesID.value[0])
+  messages.value.splice(0, 1)
+  messagesID.value.splice(0, 1)
+}
 
 definePageMeta({
   middleware: 'auth'
 })
 </script>
+
 
 <style lang='scss' scoped>
 .messages-page {
