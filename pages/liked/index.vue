@@ -2,11 +2,15 @@
   <div class="liked-messages-list-page">
 
     <ScrollList>
-      <ListCompMessage :liked-mode="false"></ListCompMessage>
-      <ListCompMessage :liked-mode="false"></ListCompMessage>
-      <ListCompMessage :liked-mode="false"></ListCompMessage>
-      <ListCompMessage :liked-mode="false"></ListCompMessage>
-      <ListCompMessage :liked-mode="false"></ListCompMessage>
+      <ListCompMessage
+          v-for="(message, index) in likedMessages"
+          :key="likedMessagesID[index]"
+          :customer-name="message.customerName"
+          :customer-message="message.message"
+          :date="message.date"
+          :liked-mode="false"
+      ></ListCompMessage>
+
     </ScrollList>
 
   </div>
@@ -16,7 +20,9 @@
 <script setup lang='ts'>
 import ScrollList from "~/components/ListComp/ScrollList.vue";
 
-
+const messagesData = ref(await getCustomersMessages(2));// 1-'messages', 2-'likedMessages',
+const likedMessages = ref(messagesData.value[0])
+const likedMessagesID = ref(messagesData.value[1])
 
 definePageMeta({
   middleware: 'auth'
