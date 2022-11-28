@@ -1,11 +1,11 @@
 <template>
   <div class="message-body">
 
-    <span class="customer-name">Kasia</span>
+    <span class="customer-name">{{ customerName }}</span>
 
-    <span class="customer-message" role="textbox">Could use more tables with umbrellas outside and i write some shit to zająć more place</span>
+    <span class="customer-message" role="textbox">{{ customerMessage }}</span>
 
-    <span class="date">07.09.2022</span>
+    <span class="date">{{ date }}</span>
     
     <button class="like-gift-button">
       <img v-if="likedMode" src="~/assets/images/icons/heart_pink.svg" alt="like button">
@@ -28,7 +28,10 @@ const props = defineProps({
   likedMode: {
     type: Boolean,
     default: true
-  }
+  },
+  customerName: String,
+  customerMessage: String,
+  date: String
 })
 </script>
 
