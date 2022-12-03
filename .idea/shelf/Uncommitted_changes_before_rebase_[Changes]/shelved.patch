@@ -1,0 +1,661 @@
+Index: components/NavBar/Logged.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div class=\"nav-bar\">\r\n\r\n    <div class=\"left-group\">\r\n      <img class=\"icon-logo\" src=\"~/assets/images/svg/iconLogo.svg\" alt=\"logo\" draggable=\"false\">\r\n\r\n      <div class=\"profile-group\">\r\n\r\n        <NuxtLink to=\"/\" class=\"name-group\">\r\n          Big Burger Bar\r\n          <svg class=\"arrow-icon\" width=\"12\" height=\"19\" viewBox=\"0 0 12 19\" xmlns=\"http://www.w3.org/2000/svg\">\r\n            <path d=\"M0.574176 1.91428C2.12636 3.31366 4.59041 5.5352 6.49713 7.25453L7.92545 8.54256L8.2469 8.83248C8.46243 9.02534 8.56946 9.27895 8.56946 9.53257C8.56946 9.78618 8.46243 10.0398 8.2469 10.2327C8.14572 10.3239 8.03908 10.4214 7.92606 10.5233L5.05034 13.1146L0.582055 17.1435C0.204454 17.5277 0.222494 18.1197 0.636177 18.4924C0.851706 18.6865 1.13321 18.7843 1.41326 18.7843C1.6933 18.7856 1.97041 18.6905 2.183 18.5003C2.183 18.5003 8.78231 12.5495 11.3525 10.2327C11.5681 10.0398 11.6751 9.78618 11.6751 9.53257C11.6751 9.27895 11.5681 9.02534 11.3525 8.83248C8.78378 6.51559 2.18594 0.567492 2.18594 0.567492C1.97334 0.375959 1.6933 0.280853 1.41326 0.280853C1.13322 0.282174 0.851708 0.378602 0.636178 0.572777C0.22641 0.941946 0.206167 1.52744 0.574176 1.91428Z\"/>\r\n          </svg>\r\n        </NuxtLink>\r\n\r\n        <div class=\"stats-icons\">\r\n\r\n          <div class=\"gifts-stats\">\r\n            <img src=\"~/assets/images/icons/gift_yellow.svg\" alt=\"gift icon\">\r\n            <span>4</span>\r\n          </div>\r\n\r\n          <div class=\"messages-stats\">\r\n            <img src=\"~/assets/images/icons/message_blue.svg\" alt=\"comment icon\">\r\n            <span>37</span>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n    <div class=\"right-group\">\r\n\r\n      <div class=\"icons-group\">\r\n        <NuxtLink to=\"/messages\">\r\n          <svg class=\"message-icon\" width=\"31\" height=\"28\" viewBox=\"0 0 31 28\" xmlns=\"http://www.w3.org/2000/svg\">\r\n            <path\r\n                d=\"M15.014 2.608c6.893 0 12.5 4.408 12.5 9.827 0 6.034-6.43 9.77-12.387 9.77-2.421 0-4.23-.487-5.492-.79-1.25.752-1.993 1.273-5.34 2.233.669-1.685.902-3.372.751-5.234C4 17.187 2.515 15.47 2.515 12.434c0-5.418 5.607-9.826 12.5-9.826Zm0-2.454C7.092.154.015 5.34.015 12.434c0 2.517.924 4.987 2.559 6.904.068 2.246-1.279 5.469-2.491 7.816 3.252-.577 7.875-1.851 9.972-3.113 1.77.424 3.467.617 5.073.617 8.855 0 14.887-5.936 14.887-12.224-.001-7.132-7.127-12.28-15-12.28Z\"\r\n            />\r\n          </svg>\r\n        </NuxtLink>\r\n\r\n        <NuxtLink to=\"/liked\">\r\n          <svg class=\"heart-icon\" width=\"33\" height=\"31\" viewBox=\"0 0 33 31\" xmlns=\"http://www.w3.org/2000/svg\">\r\n            <path\r\n                d=\"M24.0512 3.6644C27.2475 3.6644 30.0722 5.76312 30.0722 9.98741C30.0722 16.6472 21.3123 21.1211 16.6493 26.0029C11.9862 21.1211 3.22762 16.6486 3.22762 9.98875C3.22762 5.88926 5.92214 3.6644 9.2487 3.6644C13.5159 3.6644 15.7515 8.55426 16.6493 10.7925C17.5443 8.55695 19.7799 3.6644 24.0512 3.6644V3.6644ZM24.0512 0.980606C21.1339 0.980606 18.2193 2.4057 16.6493 5.56855C15.0792 2.4057 12.1646 0.980606 9.2487 0.980606C4.68223 0.980606 0.547852 4.18774 0.547852 9.95654C0.547852 19.7121 13.8366 24.6342 16.6493 30.5023C19.4619 24.6342 32.752 19.7121 32.752 9.95654C32.752 3.80261 28.1708 0.980606 24.0512 0.980606Z\"/>\r\n          </svg>\r\n        </NuxtLink>\r\n\r\n        <NuxtLink to=\"/gifts\">\r\n          <svg class=\"gift-icon\" width=\"28\" height=\"27\" viewBox=\"0 0 28 27\" xmlns=\"http://www.w3.org/2000/svg\">\r\n            <path\r\n                d=\"M12.8533 26.6596H2.85842V13.333H12.8533V26.6596ZM12.8533 6.66975H0.637329V11.1119H12.8533V6.66975ZM15.0744 26.6596H25.0693V13.333H15.0744V26.6596ZM15.0744 6.66975V11.1119H27.2904V6.66975H15.0744ZM19.9264 0.00648499C16.6536 0.00648499 14.739 3.86785 13.9639 5.55921H19.8997C23.7789 5.55921 23.82 0.00648499 19.9264 0.00648499ZM19.0424 4.02777H16.7735C17.5942 2.78285 18.3716 1.84444 19.3744 1.84444C20.676 1.84444 20.7382 4.02777 19.0424 4.02777ZM8.02801 5.55921H13.9639C13.1887 3.86785 11.2741 0.00648499 8.00135 0.00648499C4.10778 0.00648499 4.14887 5.55921 8.02801 5.55921ZM8.55329 1.84444C9.55611 1.84444 10.3335 2.78285 11.1542 4.02777H8.88535C7.18954 4.02777 7.25173 1.84444 8.55329 1.84444Z\"/>\r\n          </svg>\r\n        </NuxtLink>\r\n      </div>\r\n\r\n      <NuxtLink to=\"/account\" class=\"account-group\">\r\n        <span class=\"user-name\">Ubier Bolt</span>\r\n        <span class=\"my-account\">My Account</span>\r\n      </NuxtLink>\r\n    </div>\r\n\r\n  </div>\r\n</template>\r\n\r\n\r\n<script setup lang='ts'>\r\n\r\n</script>\r\n\r\n\r\n<style lang='scss' scoped>\r\n.nav-bar {\r\n  @include nav-bar;\r\n}\r\n\r\n\r\n.left-group {\r\n  display: flex;\r\n  align-items: center;\r\n\r\n  .profile-group {\r\n    margin-left: 60px;\r\n\r\n    .name-group {\r\n      display: flex;\r\n      align-items: center;\r\n      font-size: $font-24px;\r\n      color: $lightGray;\r\n      margin: 0;\r\n      padding: 0;\r\n      cursor: pointer;\r\n      transition: $time-long-hover-anim;\r\n\r\n      .arrow-icon {\r\n        fill: $lightGray;\r\n        margin-left: 15px;\r\n        transition: $time-long-hover-anim;\r\n      }\r\n    }\r\n\r\n    .name-group:hover {\r\n      color: $offWhite;\r\n\r\n      .arrow-icon {\r\n        fill: $offWhite;\r\n        transform: translateX(3px);\r\n      }\r\n    }\r\n\r\n\r\n    .stats-icons {\r\n      display: flex;\r\n      align-items: center;\r\n\r\n      .gifts-stats,\r\n      .messages-stats {\r\n        display: flex;\r\n        align-items: center;\r\n\r\n        img {\r\n          width: 16px;\r\n\r\n        }\r\n\r\n        span {\r\n          font-size: $font-16px;\r\n          color: $yellow;\r\n          margin-left: 5px;\r\n        }\r\n      }\r\n\r\n      .messages-stats {\r\n        margin-left: 25px;\r\n\r\n        span {\r\n          color: $blue;\r\n        }\r\n      }\r\n\r\n    }\r\n  }\r\n}\r\n\r\n.right-group {\r\n  display: flex;\r\n  align-items: center;\r\n\r\n  .icons-group {\r\n    width: 250px;\r\n    display: flex;\r\n    justify-content: space-between;\r\n\r\n    .message-icon,\r\n    .gift-icon,\r\n    .heart-icon {\r\n      width: 30px;\r\n      height: 30px;\r\n      fill: $lightGray;\r\n      cursor: pointer;\r\n      transition: $time-hover-anim;\r\n    }\r\n\r\n    .message-icon:hover,\r\n    .gift-icon:hover,\r\n    .heart-icon:hover {\r\n      fill: $offWhite;\r\n      transform: scale(1.1);\r\n    }\r\n\r\n    .message-icon:active,\r\n    .gift-icon:active,\r\n    .heart-icon:active {\r\n      transform: scale(1);\r\n      transition: $time-click-anim;\r\n    }\r\n  }\r\n\r\n  .account-group {\r\n    margin-left: 60px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: end;\r\n    cursor: pointer;\r\n  }\r\n\r\n  .account-group .user-name {\r\n    font-size: $font-24px;\r\n\r\n  }\r\n\r\n  .account-group .my-account {\r\n    font-size: $font-14px;\r\n    color: $pink;\r\n    //transition: $time-long-hover-anim;\r\n  }\r\n\r\n\r\n  .account-group:hover {\r\n\r\n    .my-account {\r\n      transform: scale(1.05);\r\n    }\r\n  }\r\n\r\n\r\n}\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/components/NavBar/Logged.vue b/components/NavBar/Logged.vue
+--- a/components/NavBar/Logged.vue	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ b/components/NavBar/Logged.vue	(date 1669916009784)
+@@ -6,8 +6,8 @@
+ 
+       <div class="profile-group">
+ 
+-        <NuxtLink to="/" class="name-group">
+-          Big Burger Bar
++        <NuxtLink to="/profiles" class="name-group">
++          {{ selectedProfile }}
+           <svg class="arrow-icon" width="12" height="19" viewBox="0 0 12 19" xmlns="http://www.w3.org/2000/svg">
+             <path d="M0.574176 1.91428C2.12636 3.31366 4.59041 5.5352 6.49713 7.25453L7.92545 8.54256L8.2469 8.83248C8.46243 9.02534 8.56946 9.27895 8.56946 9.53257C8.56946 9.78618 8.46243 10.0398 8.2469 10.2327C8.14572 10.3239 8.03908 10.4214 7.92606 10.5233L5.05034 13.1146L0.582055 17.1435C0.204454 17.5277 0.222494 18.1197 0.636177 18.4924C0.851706 18.6865 1.13321 18.7843 1.41326 18.7843C1.6933 18.7856 1.97041 18.6905 2.183 18.5003C2.183 18.5003 8.78231 12.5495 11.3525 10.2327C11.5681 10.0398 11.6751 9.78618 11.6751 9.53257C11.6751 9.27895 11.5681 9.02534 11.3525 8.83248C8.78378 6.51559 2.18594 0.567492 2.18594 0.567492C1.97334 0.375959 1.6933 0.280853 1.41326 0.280853C1.13322 0.282174 0.851708 0.378602 0.636178 0.572777C0.22641 0.941946 0.206167 1.52744 0.574176 1.91428Z"/>
+           </svg>
+@@ -30,7 +30,6 @@
+ 
+     </div>
+ 
+-
+     <div class="right-group">
+ 
+       <div class="icons-group">
+@@ -69,6 +68,13 @@
+ 
+ <script setup lang='ts'>
+ 
++import {useMainStore} from "~/stores/mainStore";
++import {storeToRefs} from "pinia";
++
++const mainStorage = useMainStore()
++
++const { selectedProfile } = storeToRefs(mainStorage)
++
+ </script>
+ 
+ 
+@@ -120,6 +126,7 @@
+       .messages-stats {
+         display: flex;
+         align-items: center;
++        margin-left: 2px;
+ 
+         img {
+           width: 16px;
+@@ -183,7 +190,7 @@
+     margin-left: 60px;
+     display: flex;
+     flex-direction: column;
+-    align-items: end;
++    align-items: flex-end;
+     cursor: pointer;
+   }
+ 
+Index: pages/signup/index.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div class=\"signup-page\">\r\n\r\n    <div class=\"signup-section\">\r\n\r\n      <span class=\"header\">Sign up</span>\r\n\r\n      <div class=\"inputs-group\">\r\n        <input class=\"username-input\" v-model=\"username\" type=\"text\" placeholder=\"Username\" spellcheck=\"false\">\r\n        <input class=\"email-input\" v-model=\"email\" type=\"email\" placeholder=\"Email\">\r\n        <input class=\"password-input\" v-model=\"password\" type=\"password\" placeholder=\"Password\">\r\n        <input class=\"password-input\" type=\"password\" placeholder=\"Confirm password\">\r\n      </div>\r\n\r\n\r\n      <NuxtLink class=\"signup-icon\" @click=\"signUp\">\r\n        <img src=\"~/assets/images/icons/login_icon.svg\" alt=\"sign up icon\">\r\n      </NuxtLink>\r\n\r\n\r\n      <NuxtLink class=\"login-btn\" to=\"/login\">Log in</NuxtLink>\r\n    </div>\r\n\r\n  </div>\r\n</template>\r\n\r\n<script setup lang='ts'>\r\n\r\nconst username = ref()\r\nconst email = ref()\r\nconst password = ref()\r\n\r\nconst signUp = async () => {\r\n  await signUpUser(email.value, password.value, username.value);\r\n  navigateTo('/login');\r\n\r\n}\r\n\r\n\r\ndefinePageMeta({\r\n  middleware: 'notAuth'\r\n})\r\n</script>\r\n\r\n<style lang='scss' scoped>\r\n.signup-page {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-grow: 1;\r\n\r\n  .signup-section {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding-bottom: 90px;\r\n\r\n    .header {\r\n      font-size: $font-36px;\r\n      margin-bottom: 95px;\r\n    }\r\n\r\n    .inputs-group {\r\n      height: 360px;\r\n      display: flex;\r\n      flex-direction: column;\r\n      justify-content: space-between;\r\n\r\n      input {\r\n        width: 230px;\r\n        height: 60px;\r\n        padding: 0 40px;\r\n        font-size: $font-20px;\r\n        color: $offWhite;\r\n        border: 2px solid $gray;\r\n        border-radius: 50px;\r\n        background: $mainDark;\r\n      }\r\n\r\n      input:focus {\r\n        outline: none;\r\n        border: 2px solid $lightGray;\r\n      }\r\n    }\r\n\r\n\r\n    .signup-icon {\r\n      margin-top: 60px;\r\n      cursor: pointer;\r\n\r\n      img {\r\n        transition: $time-hover-anim;\r\n      }\r\n    }\r\n\r\n    .signup-icon:hover img {\r\n      transform: scale(1.07);\r\n    }\r\n\r\n    .signup-icon:active img {\r\n      transform: scale(1);\r\n      transition: $time-click-anim;\r\n    }\r\n\r\n\r\n    .login-btn {\r\n      position: absolute;\r\n      right: 100px;\r\n      bottom: 50px;\r\n      font-size: $font-28px;\r\n      transition: $time-long-hover-anim;\r\n    }\r\n\r\n    .login-btn:hover {\r\n      transform: scale(1.05);\r\n    }\r\n  }\r\n}\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pages/signup/index.vue b/pages/signup/index.vue
+--- a/pages/signup/index.vue	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ b/pages/signup/index.vue	(date 1670092034347)
+@@ -13,7 +13,7 @@
+       </div>
+ 
+ 
+-      <NuxtLink class="signup-icon" @click="signUp">
++      <NuxtLink class="signup-icon" @click="">
+         <img src="~/assets/images/icons/login_icon.svg" alt="sign up icon">
+       </NuxtLink>
+ 
+Index: pages/index.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div class=\"home-page\">\r\n\r\n    <section class=\"head-section\">\r\n\r\n      <div class=\"logo-section\">\r\n        <img class=\"text-logo\" src=\"~/assets/images/svg/textLogo.svg\" alt=\"logo\">\r\n        <p>Fast and easy way to collect ideas and thoughts from your clients</p>\r\n      </div>\r\n\r\n      <img class=\"devices-image\" src=\"~/assets/images/png/devices.png\" alt=\"devices image\">\r\n\r\n    </section>\r\n\r\n    <section class=\"content-section\">\r\n     <div class=\"center-wrapper\">\r\n       <p>\r\n         FeedCup is a better way to communicate with your customers, the way your\r\n         customers can share their thoughts and ideas about your business with you\r\n       </p>\r\n     </div>\r\n    </section>\r\n\r\n\r\n  </div>\r\n</template>\r\n\r\n<script lang=\"ts\">\r\n\r\n\r\ndefinePageMeta({\r\n  middleware: 'notAuth'\r\n})\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\n.home-page {\r\n\r\n  height: 200vh;\r\n}\r\n\r\n.head-section {\r\n  height: 90vh;\r\n  position: relative;\r\n\r\n  .logo-section {\r\n    display: inline-block;\r\n    position: absolute;\r\n    left: 200px;\r\n    top: 230px;\r\n\r\n    p{\r\n      width: 400px;\r\n      margin-top: 70px;\r\n      margin-left: 200px;\r\n      font-size: $font-24px;\r\n      color: $lightGray;\r\n    }\r\n  }\r\n\r\n  .text-logo {\r\n    width: 450px;\r\n  }\r\n\r\n  .devices-image {\r\n    width: 950px;\r\n    position: absolute;\r\n    right: 100px;\r\n    bottom: 220px;\r\n\r\n  }\r\n}\r\n\r\n.content-section {\r\n\r\n  .center-wrapper {\r\n    display: flex;\r\n    justify-content: center;\r\n\r\n    p {\r\n      width: 550px;\r\n      font-size: $font-24px;\r\n      color: $offWhite;\r\n      text-align: center;\r\n    }\r\n  }\r\n\r\n}\r\n\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pages/index.vue b/pages/index.vue
+--- a/pages/index.vue	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ b/pages/index.vue	(date 1670091577148)
+@@ -1,11 +1,14 @@
+ <template>
+   <div class="home-page">
+ 
++    <div class="under-construction-sign">Under construction</div>
++
++
+     <section class="head-section">
+ 
+       <div class="logo-section">
+         <img class="text-logo" src="~/assets/images/svg/textLogo.svg" alt="logo">
+-        <p>Fast and easy way to collect ideas and thoughts from your clients</p>
++        <span>Fast and easy way to collect ideas and thoughts from your clients</span>
+       </div>
+ 
+       <img class="devices-image" src="~/assets/images/png/devices.png" alt="devices image">
+@@ -13,19 +16,51 @@
+     </section>
+ 
+     <section class="content-section">
+-     <div class="center-wrapper">
+-       <p>
+-         FeedCup is a better way to communicate with your customers, the way your
+-         customers can share their thoughts and ideas about your business with you
+-       </p>
+-     </div>
++
++      <div class="first-paragraph">
++        <span class="pink-block"></span>
++
++        <div class="text-group">
++          <p class="header">People very often have great ideas or insights</p>
++          <p class="content">FeedCap is a simple way to give your customers the opportunity to share these ideas</p>
++        </div>
++
++      </div>
++
++      <div class="icons-group">
++
++        <div class="improve-group">
++          <img src="@/assets/images/icons/improve.svg" alt="improve icon">
++          <div class="text-group">
++            <span class="header">Improve</span>
++            <span class="description">Improve your business with the help of your customers</span>
++          </div>
++        </div>
++
++        <div class="light-group">
++          <img src="@/assets/images/icons/feather.svg" alt="feather icon">
++          <div class="text-group">
++            <span class="header">Light</span>
++            <span class="description">Light and clean design, only the most important features</span>
++          </div>
++        </div>
++
++        <div class="gifts-group">
++          <img src="@/assets/images/icons/gift_icon.svg" alt="gift icon">
++          <div class="text-group">
++            <span class="header">Gifts</span>
++            <span class="description">Encourage customers to share ideas by rewarding the best ones</span>
++          </div>
++        </div>
++      </div>
++
+     </section>
+ 
+ 
+   </div>
+ </template>
+ 
+-<script lang="ts">
++<script setup lang="ts">
+ 
+ 
+ definePageMeta({
+@@ -35,56 +70,114 @@
+ 
+ <style lang="scss" scoped>
+ .home-page {
+-
+   height: 200vh;
+-}
++
++  .under-construction-sign {
++    position: absolute;
++    top: 60px;
++    left: 50%;
++    transform: translate(-50%, 0);
++    font-size: $font-36px;
++    color: $lightGray;
++    text-align: center;
++  }
+ 
+-.head-section {
+-  height: 90vh;
+-  position: relative;
++  .head-section {
++    height: 90vh;
++    position: relative;
+ 
+-  .logo-section {
+-    display: inline-block;
+-    position: absolute;
+-    left: 200px;
+-    top: 230px;
++    .logo-section {
++      display: inline-block;
++      position: absolute;
++      left: 200px;
++      top: 230px;
+ 
+-    p{
+-      width: 400px;
+-      margin-top: 70px;
+-      margin-left: 200px;
+-      font-size: $font-24px;
+-      color: $lightGray;
+-    }
+-  }
++      span{
++        display: block;
++        width: 450px;
++        margin-top: 50px;
++        margin-left: 50px;
++        font-size: $font-24px;
++        color: $lightGray;
++      }
++    }
+ 
+-  .text-logo {
+-    width: 450px;
+-  }
++    .text-logo {
++      width: 450px;
++    }
+ 
+-  .devices-image {
+-    width: 950px;
+-    position: absolute;
+-    right: 100px;
+-    bottom: 220px;
++    .devices-image {
++      width: 950px;
++      position: absolute;
++      right: 100px;
++      bottom: 220px;
+ 
+-  }
+-}
++    }
++  }
+ 
+-.content-section {
++  .content-section {
+ 
+-  .center-wrapper {
+-    display: flex;
+-    justify-content: center;
++    .first-paragraph {
++      width: 650px;
++      margin-left: 200px;
++      display: flex;
++      justify-content: space-between;
++
++      .pink-block {
++        width: 8px;
++        height: 80px;
++        margin-top: 8px;
++        background-color: $pink;
++        flex-shrink: 0;
++      }
+ 
+-    p {
+-      width: 550px;
+-      font-size: $font-24px;
+-      color: $offWhite;
+-      text-align: center;
++      .text-group {
++        margin-left: 75px;
++
++        .header {
++          font-size: $font-36px;
++          letter-spacing: 4px;
++          margin: 0 0 50px 0;
++        }
++
++        .content {
++          margin: 0;
++          font-size: $font-24px;
++          color: $lightGray;
++        }
++      }
+     }
+-  }
++
++    .icons-group {
++      margin: 300px 200px 0 200px;
++      display: flex;
++      justify-content: space-between;
++
++      .improve-group,
++      .light-group,
++      .gifts-group{
++        display: flex;
++        align-items: center;
++
++        .text-group {
++          display: flex;
++          flex-direction: column;
++          margin-left: 22px;
++        }
+ 
+-}
++        .header {
++          font-size: $font-32px;
++          margin-bottom: 20px;
++          letter-spacing: 3px;
++        }
+ 
++        .description {
++          width: 240px;
++          color: $lightGray;
++
++        }
++      }
++    }
++  }
++}
+ </style>
+\ No newline at end of file
+Index: nuxt.config.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nexport default defineNuxtConfig({\r\n    ssr: false,\r\n    css: [\"~/assets/style/main.scss\"],\r\n    vite: {\r\n        css: {\r\n            preprocessorOptions: {\r\n                scss: {\r\n                    additionalData:\r\n                        '@import \"~/assets/style/variables.scss\"; ' +\r\n                        '@import \"~/assets/style/mixins.scss\";',\r\n                },\r\n            },\r\n        },\r\n    },\r\n    modules: [\r\n        [\r\n            '@pinia/nuxt',\r\n            {\r\n                autoImports: [\r\n                    'defineStore',\r\n                    ['defineStore', 'definePiniaStore'],\r\n                ],\r\n            },\r\n        ],\r\n    ],\r\n    runtimeConfig: {\r\n        apiSecret: process.env.FIREBASE_API_KEY,\r\n        public: {\r\n            apiBase: process.env.FIREBASE_API_KEY,\r\n        }\r\n    },\r\n})\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/nuxt.config.ts b/nuxt.config.ts
+--- a/nuxt.config.ts	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ b/nuxt.config.ts	(date 1670098073429)
+@@ -1,6 +1,10 @@
+ 
+ export default defineNuxtConfig({
+     ssr: false,
++    target: 'static',
++    router: {
++        base: '/FeedCap/'
++    },
+     css: ["~/assets/style/main.scss"],
+     vite: {
+         css: {
+Index: pages/login/index.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div class=\"login-page\">\r\n    <div class=\"login-section\">\r\n\r\n      <span class=\"header\">Log in</span>\r\n\r\n      <span class=\"errorMessage\" v-if=\"errorMessage\">{{errorMessage}}</span>\r\n\r\n      <input :class=\"emailInputClassName\" v-model=\"email\" type=\"email\" placeholder=\"Email\">\r\n      <input :class=\"passwordInputClassName\" v-model=\"password\" type=\"password\" placeholder=\"Password\">\r\n\r\n      <div class=\"login-options\">\r\n        <label class=\"check-box-wrap\">\r\n          <input class=\"check-box\" id=\"check-box\" type=\"checkbox\" checked>\r\n          Remember me\r\n        </label>\r\n        <NuxtLink to=\"/forgot-password\">Forgot password</NuxtLink>\r\n      </div>\r\n\r\n      <NuxtLink class=\"login-icon\" @click=\"logIn\">\r\n        <img src=\"~/assets/images/icons/login_icon.svg\" alt=\"login icon\">\r\n      </NuxtLink>\r\n\r\n      <NuxtLink class=\"signup-btn\" to=\"/signup\">Sign up</NuxtLink>\r\n    </div>\r\n  </div>\r\n</template>\r\n\r\n<script setup lang='ts'>\r\nimport {useGlobalLoginError} from \"~/stores/loginError\";\r\nimport {ref} from \"#imports\";\r\n\r\n\r\nconst username = ref();\r\nconst email = ref();\r\nconst password = ref();\r\n\r\nconst logIn = async () => {\r\n  await logInUser(email.value, password.value)\r\n};\r\n\r\n\r\nconst globalLoginError = useGlobalLoginError();\r\nconst emailError = 'wrong email';\r\nconst passwordError = 'wrong password';\r\n\r\nconst errorMessage = computed(() => {\r\n  if(globalLoginError.error?.endsWith('found')) {\r\n    return emailError\r\n  }\r\n  else if (globalLoginError.error?.endsWith('password')) {\r\n    return passwordError\r\n  }\r\n  else {\r\n    return null\r\n  }\r\n})\r\n\r\nconst emailInputClassName = computed(() => {\r\n  if(globalLoginError.error?.endsWith('found')) {\r\n    return 'email-input error'\r\n  }\r\n  else {\r\n    return 'email-input'\r\n  }\r\n})\r\n\r\nconst passwordInputClassName = computed(() => {\r\n  if(globalLoginError.error?.endsWith('password')) {\r\n    return 'password-input error'\r\n  }\r\n  else {\r\n    return 'password-input'\r\n  }\r\n})\r\n\r\n\r\n\r\n\r\ndefinePageMeta({\r\n  middleware: 'notAuth'\r\n})\r\n</script>\r\n\r\n<style lang='scss' scoped>\r\n\r\n.login-page {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-grow: 1;\r\n\r\n  .login-section {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding-bottom: 70px;\r\n\r\n    .header {\r\n      font-size: $font-36px;\r\n      margin-bottom: 95px;\r\n    }\r\n\r\n    .errorMessage {\r\n      color: $red;\r\n      position: absolute;\r\n      top: 350px;\r\n    }\r\n\r\n    .email-input,\r\n    .password-input {\r\n      width: 230px;\r\n      height: 60px;\r\n      padding: 0 40px;\r\n      font-size: $font-20px;\r\n      color: $offWhite;\r\n      border: 2px solid $gray;\r\n      border-radius: 50px;\r\n      background: $mainDark;\r\n    }\r\n\r\n    .email-input:focus,\r\n    .password-input:focus {\r\n      outline: none;\r\n      border: 2px solid $lightGray;\r\n    }\r\n\r\n    .email-input {\r\n      margin-bottom: 45px;\r\n    }\r\n\r\n    .email-input:-webkit-autofill,\r\n    .password-input:-webkit-autofill{\r\n      transition: background-color 5000s ease-in-out 0s;\r\n      -webkit-text-fill-color: $offWhite !important;\r\n    }\r\n\r\n    .email-input.error,\r\n    .password-input.error {\r\n      border: 2px solid $red;\r\n    }\r\n\r\n    .email-input.error:focus,\r\n    .password-input.error:focus {\r\n      outline: none;\r\n      border: 2px solid $red;\r\n    }\r\n\r\n    .login-options {\r\n      width: 310px;\r\n      display: flex;\r\n      justify-content: space-between;\r\n      align-items: center;\r\n      padding-top: 30px;\r\n\r\n      .check-box-wrap {\r\n        display: flex;\r\n        align-items: center;\r\n        cursor: pointer;\r\n        user-select: none;\r\n\r\n        input[type='checkbox'] {\r\n          appearance: none;\r\n          -webkit-appearance: none;\r\n          position: relative;\r\n          width: 20px;\r\n          height: 20px;\r\n          margin-right: 8px;\r\n          cursor: pointer;\r\n          background-color: $mainDark;\r\n          border: 2px solid $gray;\r\n          border-radius: 5px;\r\n          outline: none;\r\n        }\r\n\r\n        input[type='checkbox']:checked::after {\r\n          content: '\\2714';\r\n          font-size: 13px;\r\n          position: absolute;\r\n          top: -1px;\r\n          left: 3px;\r\n          color: $lightGray;\r\n        }\r\n      }\r\n\r\n      a {\r\n        color: $pink;\r\n        transition: $time-hover-anim;\r\n      }\r\n    }\r\n\r\n    .login-icon {\r\n      margin-top: 85px;\r\n      cursor: pointer;\r\n\r\n      img {\r\n        transition: $time-hover-anim;\r\n      }\r\n    }\r\n\r\n    .login-icon:hover img {\r\n      transform: scale(1.07);\r\n    }\r\n\r\n    .login-icon:active img {\r\n      transform: scale(1);\r\n      transition: $time-click-anim;\r\n    }\r\n\r\n    .signup-btn {\r\n      position: absolute;\r\n      right: 100px;\r\n      bottom: 50px;\r\n      font-size: $font-28px;\r\n      transition: $time-long-hover-anim;\r\n    }\r\n\r\n    .signup-btn:hover {\r\n      transform: scale(1.05);\r\n    }\r\n  }\r\n\r\n\r\n}\r\n\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pages/login/index.vue b/pages/login/index.vue
+--- a/pages/login/index.vue	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ b/pages/login/index.vue	(date 1670092034343)
+@@ -17,7 +17,7 @@
+         <NuxtLink to="/forgot-password">Forgot password</NuxtLink>
+       </div>
+ 
+-      <NuxtLink class="login-icon" @click="logIn">
++      <NuxtLink class="login-icon" @click="">
+         <img src="~/assets/images/icons/login_icon.svg" alt="login icon">
+       </NuxtLink>
+ 
+Index: pages/[customer]/index.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div class=\"customer-page\">\r\n\r\n    <div class=\"header-section\" v-if=\"mode !== 3\">\r\n\r\n      <div v-if=\"mode === 1\">\r\n        <div class=\"profile-name\">{{ serviceProfileName }}</div>\r\n\r\n        <div class=\"stats-icons\">\r\n\r\n          <div class=\"gifts-stats\">\r\n            <img src=\"~/assets/images/icons/gift_yellow.svg\" alt=\"gift icon\">\r\n            <span>4</span>\r\n          </div>\r\n\r\n          <div class=\"messages-stats\">\r\n            <img src=\"~/assets/images/icons/message_blue.svg\" alt=\"comment icon\">\r\n            <span>37</span>\r\n          </div>\r\n\r\n        </div>\r\n\r\n        <button class=\"info-button\">\r\n          <svg width=\"19\" height=\"20\" viewBox=\"0 0 19 20\" xmlns=\"http://www.w3.org/2000/svg\">\r\n            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\"\r\n                  d=\"M9.41333 18.0147C13.8366 18.0147 17.4224 14.4289 17.4224 10.0056C17.4224 5.58232 13.8366 1.99654 9.41333 1.99654C4.99004 1.99654 1.40425 5.58232 1.40425 10.0056C1.40425 14.4289 4.99004 18.0147 9.41333 18.0147ZM9.41333 19.3485C14.5733 19.3485 18.7562 15.1656 18.7562 10.0056C18.7562 4.84568 14.5733 0.66272 9.41333 0.66272C4.25339 0.66272 0.0704346 4.84568 0.0704346 10.0056C0.0704346 15.1656 4.25339 19.3485 9.41333 19.3485Z\"/>\r\n            <path\r\n                d=\"M10.3711 15.3267C10.3711 15.6042 10.2804 15.8389 10.099 16.031C9.91762 16.2124 9.6882 16.3031 9.41077 16.3031C9.13334 16.3031 8.90392 16.2124 8.72252 16.031C8.54112 15.8389 8.45042 15.6042 8.45042 15.3267V8.71634C8.45042 8.43891 8.54112 8.20949 8.72252 8.02809C8.90392 7.83602 9.13334 7.73999 9.41077 7.73999C9.6882 7.73999 9.91762 7.83602 10.099 8.02809C10.2804 8.20949 10.3711 8.43891 10.3711 8.71634V15.3267ZM9.39476 6.69961C9.03197 6.69961 8.77587 6.64092 8.62649 6.52355C8.4771 6.40617 8.4024 6.1981 8.4024 5.89932V5.59521C8.4024 5.28577 8.48243 5.07769 8.64249 4.97099C8.81322 4.85361 9.06931 4.79492 9.41077 4.79492C9.78424 4.79492 10.0457 4.85361 10.1951 4.97099C10.3444 5.08836 10.4191 5.29644 10.4191 5.59521V5.89932C10.4191 6.20877 10.3391 6.42218 10.179 6.53955C10.019 6.64626 9.75756 6.69961 9.39476 6.69961Z\"/>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n      <div v-else-if=\"mode === 2\">\r\n        <div class=\"customer-name\">{{ customerName }}</div>\r\n        <div class=\"customer-email\">{{ customerEmail }}</div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"body-section\">\r\n\r\n      <div class=\"flex-column\" v-if=\"mode === 1\">\r\n        <input class=\"customer-name\" v-model=\"customerName\" type=\"text\" placeholder=\"Name\">\r\n        <input class=\"customer-email\" v-model=\"customerEmail\" type=\"email\" placeholder=\"Email\">\r\n\r\n        <button class=\"next-button\" @click=\"changeModeUp\">\r\n          <span>Next</span>\r\n          <svg width=\"7\" height=\"11\" viewBox=\"0 0 7 11\" xmlns=\"http://www.w3.org/2000/svg\">\r\n            <path\r\n                d=\"M1.07234 1.67443L4.00572 4.62646L4.71311 5.33847L4.87231 5.49874C4.97905 5.60534 5.03206 5.74554 5.03206 5.88574C5.03206 6.02593 4.97905 6.16613 4.87231 6.27274C4.8222 6.32315 4.76938 6.37706 4.71341 6.43338L3.28919 7.86583L1.07624 10.093C0.889235 10.3054 0.89817 10.6326 1.10305 10.8386C1.20979 10.946 1.34921 11 1.4879 11C1.62659 11.0007 1.76383 10.9481 1.86912 10.843C1.86912 10.843 5.13747 7.55349 6.41039 6.27274C6.51714 6.16613 6.57014 6.02593 6.57014 5.88574C6.57014 5.74554 6.51714 5.60534 6.41039 5.49874C5.1382 4.21798 1.87058 0.929935 1.87058 0.929935C1.76529 0.824058 1.6266 0.771484 1.4879 0.771484C1.34921 0.772215 1.20979 0.825519 1.10305 0.932857C0.900109 1.13693 0.890083 1.46058 1.07234 1.67443Z\"/>\r\n          </svg>\r\n        </button>\r\n      </div>\r\n\r\n      <div v-else-if=\"mode === 2\">\r\n        <span class=\"textarea-input\" @blur=\"saveCustomerMessage\" role=\"textbox\" contenteditable=\"true\" spellcheck=\"false\"></span>\r\n\r\n        <div class=\"buttons-group\">\r\n          <button class=\"back-button\" @click=\"changeModeDown\">\r\n            <svg width=\"6\" height=\"12\" viewBox=\"0 0 6 12\" xmlns=\"http://www.w3.org/2000/svg\">\r\n              <path\r\n                  d=\"M5.77135 10.2311L2.83797 7.27906L2.13058 6.56705L1.97138 6.40678C1.86464 6.30017 1.81163 6.15998 1.81163 6.01978C1.81163 5.87959 1.86464 5.73939 1.97138 5.63278C2.02149 5.58236 2.07431 5.52846 2.13028 5.47214L3.5545 4.03969L5.76745 1.81254C5.95445 1.60015 5.94552 1.27293 5.74064 1.0669C5.6339 0.959565 5.49448 0.905531 5.35579 0.905531C5.2171 0.904801 5.07986 0.957375 4.97457 1.06252C4.97457 1.06252 1.70622 4.35203 0.433295 5.63278C0.326553 5.73939 0.273545 5.87959 0.273545 6.01978C0.273545 6.15998 0.326553 6.30017 0.433295 6.40678C1.70549 7.68753 4.97311 10.9756 4.97311 10.9756C5.0784 11.0815 5.21709 11.134 5.35579 11.134C5.49448 11.1333 5.6339 11.08 5.74064 10.9727C5.94358 10.7686 5.95361 10.4449 5.77135 10.2311Z\"/>\r\n            </svg>\r\n            <span>Back</span>\r\n          </button>\r\n          <button :class=\"sendButtonClassName\" @click=\"sendCustomerMessage\">Send</button>\r\n        </div>\r\n      </div>\r\n\r\n      <div v-else-if=\"mode === 3\">\r\n        <div class=\"thanks\">Thank you for your feedback</div>\r\n        <div class=\"sent-status\">Your message has been successfully sent</div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n  </div>\r\n</template>\r\n\r\n<script setup lang='ts'>\r\n\r\n\r\nconst route = useRoute()\r\n\r\nconst sendButtonClassName = ref(\"send-button\")\r\n\r\nconst linkData = route.path.substring(1).split('-');\r\nconst serviceProfileName = linkData[0];\r\nconst serviceID = (linkData[1]);\r\n\r\nconst customerName = ref()\r\nconst customerEmail = ref();\r\nlet customerMessage = null;\r\n\r\nconst saveCustomerMessage = (e) => {\r\n   customerMessage = e.target.innerText\r\n}\r\n\r\n\r\nconst sendCustomerMessage = async () => {\r\n  sendButtonClassName.value ='send-button clicked'\r\n\r\n  const email = await findServiceEmail(serviceID)\r\n\r\n  const date = new Date();\r\n  const dd = String(date.getDate()).padStart(2, '0');\r\n  const mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!\r\n  const yyyy = date.getFullYear();\r\n\r\n  const todaysDate = dd + '.' + mm + '.' + yyyy;\r\n  const dateNow = Date.now().toString();\r\n\r\n  await sendMessage(email, serviceProfileName, customerEmail.value, customerName.value, customerMessage, todaysDate, dateNow);\r\n  changeModeUp();\r\n}\r\n\r\n\r\n\r\nconst mode = ref(1)\r\n\r\nconst changeModeUp = () => {\r\n  mode.value += 1\r\n}\r\n\r\nconst changeModeDown = () => {\r\n  mode.value -= 1\r\n}\r\n</script>\r\n\r\n<style lang='scss' scoped>\r\n.customer-page {\r\n  height: calc(100vh - 140px);\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n\r\n  .header-section {\r\n    margin-top: 170px;\r\n    position: relative;\r\n\r\n    .profile-name,\r\n    .customer-name,\r\n    .customer-email {\r\n      font-size: $font-28px;\r\n      text-align: center;\r\n    }\r\n\r\n    .stats-icons {\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      margin-top: 4px;\r\n\r\n      .gifts-stats,\r\n      .messages-stats {\r\n        display: flex;\r\n        align-items: center;\r\n\r\n        img {\r\n          width: 18px;\r\n\r\n        }\r\n\r\n        span {\r\n          font-size: $font-18px;\r\n          color: $yellow;\r\n          margin-left: 5px;\r\n        }\r\n      }\r\n\r\n      .messages-stats {\r\n        margin-left: 25px;\r\n\r\n        span {\r\n          color: $blue;\r\n        }\r\n      }\r\n\r\n    }\r\n\r\n    .info-button {\r\n      position: absolute;\r\n      top: -30px;\r\n      right: -50px;\r\n      fill: $lightGray;\r\n      cursor: pointer;\r\n      transition: $time-hover-anim;\r\n    }\r\n\r\n    .info-button:hover {\r\n      fill: $offWhite;\r\n    }\r\n\r\n    .customer-email {\r\n      font-size: $font-16px;\r\n      color: $lightGray;\r\n      margin-top: 8px;\r\n    }\r\n  }\r\n\r\n  .body-section {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    margin-top: 130px;\r\n    position: relative;\r\n    max-width: 230px;\r\n\r\n    .flex-column {\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n    }\r\n\r\n    .customer-name,\r\n    .customer-email {\r\n      width: 200px;\r\n      border: none;\r\n      border-bottom: 1px solid $lightGray;\r\n      font-size: $font-20px;\r\n      color: $offWhite;\r\n      text-align: center;\r\n      margin-bottom: 35px;\r\n    }\r\n\r\n    .customer-name {\r\n      margin-top: 50px;\r\n    }\r\n\r\n    .customer-name {\r\n      width: 150px;\r\n    }\r\n\r\n    .next-button {\r\n      display: flex;\r\n      align-items: center;\r\n      position: absolute;\r\n      right: -60px;\r\n      bottom: -50px;\r\n      cursor: pointer;\r\n\r\n      span {\r\n        font-size: $font-18px;\r\n        color: $pink;\r\n      }\r\n\r\n      svg {\r\n        width: 9px;\r\n        height: 16px;\r\n        fill: $pink;\r\n        transition: $time-hover-anim;\r\n        margin-left: 6px;\r\n      }\r\n    }\r\n\r\n    .next-button:hover {\r\n      svg {\r\n        transform: translateX(2px);\r\n      }\r\n    }\r\n\r\n    .back-button:hover {\r\n      svg {\r\n        transform: translateX(-2px);\r\n      }\r\n    }\r\n\r\n    .textarea-input {\r\n      width: 280px;\r\n      min-height: 30px;\r\n      margin: 0 auto 0 auto;\r\n      display: block;\r\n      font-size: $font-18px;\r\n      color: $offWhite;\r\n      text-align: center;\r\n      border-bottom: 2px solid $gray;\r\n      outline: none;\r\n      -webkit-user-modify: read-write;\r\n      overflow-wrap: break-word;\r\n      -webkit-line-break: after-white-space;\r\n    }\r\n\r\n    .textarea-input[contenteditable]:empty::before {\r\n      content: 'What would you like to tell us';\r\n      color: $lightGray;\r\n      pointer-events: none;\r\n    }\r\n\r\n    .textarea-input[contenteditable]:focus::before {\r\n      content: '';\r\n    }\r\n\r\n    .buttons-group {\r\n      width: 350px;\r\n      margin-top: 100px;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n\r\n      .back-button {\r\n        display: flex;\r\n        align-items: center;\r\n\r\n        span {\r\n          font-size: $font-18px;\r\n          color: $lightGray;\r\n        }\r\n\r\n        svg {\r\n          width: 9px;\r\n          height: 16px;\r\n          fill: $lightGray;\r\n          transition: $time-hover-anim;\r\n          margin-right: 6px;\r\n        }\r\n      }\r\n\r\n      .send-button {\r\n        padding: 8px 34px;\r\n        font-size: $font-18px;\r\n        color: $pink;\r\n        border: 1px solid $gray;\r\n        border-radius: 45px;\r\n        cursor: pointer;\r\n        transition: $time-hover-anim;\r\n      }\r\n\r\n      .send-button:hover {\r\n        transform: scale(1.03);\r\n      }\r\n\r\n      .send-button.clicked {\r\n        pointer-events: none;\r\n        opacity: 0.6;\r\n      }\r\n    }\r\n  }\r\n\r\n  .thanks {\r\n    width: 350px;\r\n    font-size: $font-48px;\r\n    color: $pink;\r\n    text-align: center;\r\n    margin: 120px 0 50px 0;\r\n  }\r\n\r\n  .sent-status {\r\n    font-size: $font-14px;\r\n    color: $green;\r\n    text-align: center;\r\n  }\r\n}\r\n</style>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pages/[customer]/index.vue b/pages/[customer]/index.vue
+--- a/pages/[customer]/index.vue	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ b/pages/[customer]/index.vue	(date 1669920832873)
+@@ -89,9 +89,9 @@
+ 
+ const customerName = ref()
+ const customerEmail = ref();
+-let customerMessage = null;
++let customerMessage: null = null;
+ 
+-const saveCustomerMessage = (e) => {
++const saveCustomerMessage = (e: { target: { innerText: null; }; }) => {
+    customerMessage = e.target.innerText
+ }
+ 
+Index: dist/_nuxt/improve.074fdf5e.svg
+===================================================================
+diff --git a/dist/_nuxt/improve.074fdf5e.svg b/dist/_nuxt/improve.074fdf5e.svg
+deleted file mode 100644
+--- a/dist/_nuxt/improve.074fdf5e.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,11 +0,0 @@
+-<svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<g clip-path="url(#clip0_2203_131)">
+-<path d="M81.7606 13.9518L55.7905 59.462L32.0293 45.5826L11.5267 81.5117" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-<path d="M59.3027 19.9958L81.7605 13.9519L87.8161 36.6511" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-</g>
+-<defs>
+-<clipPath id="clip0_2203_131">
+-<rect width="93" height="94" fill="white" transform="translate(0.143555 0.73175)"/>
+-</clipPath>
+-</defs>
+-</svg>
+Index: dist/_nuxt/textLogo.885f97a3.svg
+===================================================================
+diff --git a/dist/_nuxt/textLogo.885f97a3.svg b/dist/_nuxt/textLogo.885f97a3.svg
+deleted file mode 100644
+--- a/dist/_nuxt/textLogo.885f97a3.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,10 +0,0 @@
+-<svg width="66" height="15" viewBox="0 0 66 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M65.1703 11.9011C64.9581 11.9011 64.7913 11.8405 64.67 11.7192C64.5588 11.5979 64.5032 11.4311 64.5032 11.2188V10.9156C64.5032 10.6932 64.5588 10.5213 64.67 10.4C64.7913 10.2787 64.9581 10.2181 65.1703 10.2181H65.2916C65.514 10.2181 65.6808 10.2787 65.792 10.4C65.9032 10.5213 65.9588 10.6932 65.9588 10.9156V11.2188C65.9588 11.4311 65.9032 11.5979 65.792 11.7192C65.6808 11.8405 65.514 11.9011 65.2916 11.9011H65.1703Z" fill="#D752B2"/>
+-<path d="M44.2603 1.99988C44.4321 2.09085 44.5282 2.22732 44.5484 2.40927C44.5787 2.59122 44.5332 2.75801 44.4119 2.90964C44.3209 3.04105 44.2047 3.11181 44.0632 3.12191C43.9217 3.13202 43.7801 3.1017 43.6386 3.03094C43.305 2.82877 42.9462 2.67209 42.5621 2.56089C42.178 2.43959 41.7736 2.37894 41.3491 2.37894C40.7527 2.37894 40.2068 2.48508 39.7115 2.69736C39.2162 2.89953 38.7866 3.18762 38.4227 3.56163C38.0588 3.93565 37.7757 4.38042 37.5736 4.89595C37.3714 5.41148 37.2703 5.98261 37.2703 6.60933C37.2703 7.27649 37.3764 7.87289 37.5887 8.39853C37.801 8.92417 38.0891 9.37399 38.453 9.74801C38.827 10.1119 39.2566 10.3899 39.7418 10.582C40.2371 10.774 40.7729 10.87 41.3491 10.87C41.7635 10.87 42.1628 10.8144 42.5469 10.7033C42.931 10.5921 43.2949 10.4303 43.6386 10.218C43.7801 10.1473 43.9217 10.122 44.0632 10.1422C44.2047 10.1625 44.326 10.2332 44.4271 10.3545C44.5484 10.5162 44.5939 10.6881 44.5635 10.87C44.5332 11.0419 44.4372 11.1682 44.2755 11.2491C44.0227 11.4007 43.7347 11.5423 43.4112 11.6737C43.0877 11.795 42.7491 11.891 42.3953 11.9618C42.0516 12.0325 41.7029 12.0679 41.3491 12.0679C40.6213 12.0679 39.9339 11.9415 39.2869 11.6888C38.64 11.4361 38.0689 11.0722 37.5736 10.5971C37.0782 10.122 36.684 9.55089 36.3909 8.88373C36.1078 8.20647 35.9663 7.44833 35.9663 6.60933C35.9663 5.82087 36.1028 5.09812 36.3757 4.44107C36.6486 3.78402 37.0277 3.21289 37.5129 2.72768C38.0082 2.24248 38.5793 1.86341 39.2263 1.59048C39.8833 1.31756 40.5909 1.18109 41.3491 1.18109C41.8747 1.18109 42.3852 1.25185 42.8805 1.39337C43.3859 1.53489 43.8458 1.73706 44.2603 1.99988Z" fill="#6A1FE6"/>
+-<path d="M52.6381 4.00135C52.81 4.00135 52.9515 4.062 53.0627 4.1833C53.184 4.29449 53.2447 4.43601 53.2447 4.60786V11.2946C53.2447 11.4664 53.184 11.613 53.0627 11.7343C52.9515 11.8556 52.81 11.9163 52.6381 11.9163C52.4562 11.9163 52.3096 11.8556 52.1984 11.7343C52.0872 11.613 52.0316 11.4664 52.0316 11.2946V9.85414L52.3197 9.82382C52.3197 10.0462 52.2439 10.2888 52.0923 10.5516C51.9407 10.8144 51.7334 11.0621 51.4706 11.2946C51.2078 11.517 50.8944 11.704 50.5305 11.8556C50.1767 11.9971 49.7926 12.0679 49.3782 12.0679C48.6908 12.0679 48.0742 11.891 47.5283 11.5372C46.9825 11.1733 46.5478 10.683 46.2243 10.0664C45.911 9.44981 45.7543 8.74727 45.7543 7.95881C45.7543 7.16024 45.911 6.4577 46.2243 5.8512C46.5478 5.23458 46.9825 4.75443 47.5283 4.41074C48.0742 4.05695 48.6807 3.88005 49.3478 3.88005C49.7825 3.88005 50.1868 3.95081 50.5609 4.09233C50.9349 4.23384 51.2583 4.4259 51.5313 4.66851C51.8143 4.91111 52.0316 5.17898 52.1833 5.47213C52.345 5.76527 52.4259 6.05842 52.4259 6.35157L52.0316 6.26059V4.60786C52.0316 4.43601 52.0872 4.29449 52.1984 4.1833C52.3096 4.062 52.4562 4.00135 52.6381 4.00135ZM49.5146 10.9459C50.0201 10.9459 50.4648 10.8144 50.849 10.5516C51.2432 10.2888 51.5464 9.93501 51.7587 9.49024C51.9811 9.03536 52.0923 8.52488 52.0923 7.95881C52.0923 7.40284 51.9811 6.90248 51.7587 6.4577C51.5464 6.00282 51.2432 5.64903 50.849 5.39632C50.4648 5.1335 50.0201 5.00209 49.5146 5.00209C49.0193 5.00209 48.5746 5.12844 48.1803 5.38115C47.7962 5.63387 47.4929 5.98261 47.2706 6.42738C47.0482 6.87215 46.937 7.38263 46.937 7.95881C46.937 8.52488 47.0431 9.03536 47.2554 9.49024C47.4778 9.93501 47.781 10.2888 48.1652 10.5516C48.5594 10.8144 49.0092 10.9459 49.5146 10.9459Z" fill="#6A1FE6"/>
+-<path d="M59.3591 3.95586C60.0465 3.95586 60.6631 4.1277 61.209 4.47139C61.7548 4.81508 62.1844 5.29018 62.4978 5.89668C62.8213 6.50319 62.983 7.20068 62.983 7.98913C62.983 8.76749 62.8213 9.46497 62.4978 10.0816C62.1844 10.6881 61.7548 11.1682 61.209 11.522C60.6732 11.8657 60.0667 12.0376 59.3895 12.0376C59.0154 12.0376 58.6616 11.982 58.3281 11.8708C58.0046 11.7495 57.7064 11.5979 57.4335 11.4159C57.1706 11.2238 56.9483 11.0116 56.7663 10.7791C56.5844 10.5365 56.4529 10.2989 56.3721 10.0664L56.7057 9.85414V14.3271C56.7057 14.499 56.6501 14.6456 56.5389 14.7669C56.4277 14.8882 56.2811 14.9488 56.0991 14.9488C55.9273 14.9488 55.7807 14.8882 55.6594 14.7669C55.5482 14.6557 55.4926 14.5091 55.4926 14.3271V4.63818C55.4926 4.46634 55.5482 4.32482 55.6594 4.21363C55.7807 4.09233 55.9273 4.03167 56.0991 4.03167C56.2811 4.03167 56.4277 4.09233 56.5389 4.21363C56.6501 4.32482 56.7057 4.46634 56.7057 4.63818V5.98766L56.4782 5.86636C56.549 5.61365 56.6703 5.37105 56.8421 5.13855C57.0241 4.90606 57.2414 4.70389 57.4941 4.53204C57.7569 4.35009 58.045 4.20857 58.3584 4.10749C58.6819 4.0064 59.0154 3.95586 59.3591 3.95586ZM59.2227 5.0779C58.7172 5.0779 58.2674 5.20426 57.8732 5.45697C57.4891 5.70968 57.1858 6.05337 56.9634 6.48803C56.7511 6.92269 56.645 7.42306 56.645 7.98913C56.645 8.5451 56.7511 9.04547 56.9634 9.49024C57.1858 9.93501 57.4891 10.2838 57.8732 10.5365C58.2674 10.7892 58.7172 10.9155 59.2227 10.9155C59.7281 10.9155 60.1729 10.7892 60.557 10.5365C60.9411 10.2838 61.2444 9.93501 61.4667 9.49024C61.6891 9.04547 61.8003 8.5451 61.8003 7.98913C61.8003 7.42306 61.6891 6.92269 61.4667 6.48803C61.2444 6.05337 60.9411 5.70968 60.557 5.45697C60.1729 5.20426 59.7281 5.0779 59.2227 5.0779Z" fill="#6A1FE6"/>
+-<path d="M1.01278 11.9162C0.830831 11.9162 0.679204 11.8556 0.557903 11.7343C0.44671 11.613 0.391113 11.4664 0.391113 11.2946V1.90888C0.391113 1.73703 0.44671 1.59551 0.557903 1.48432C0.679204 1.36302 0.825777 1.30237 0.99762 1.30237H6.31972C6.49157 1.30237 6.63814 1.35797 6.75944 1.46916C6.88074 1.58035 6.94139 1.72187 6.94139 1.89371C6.94139 2.05545 6.88074 2.19191 6.75944 2.30311C6.63814 2.4143 6.49157 2.4699 6.31972 2.4699H1.54348L1.63445 2.34859V6.06345L1.55864 5.89666H5.6374C5.80924 5.89666 5.95582 5.95731 6.07712 6.07861C6.19842 6.18981 6.25907 6.33132 6.25907 6.50317C6.25907 6.65479 6.19842 6.79126 6.07712 6.91256C5.95582 7.02375 5.80924 7.07935 5.6374 7.07935H1.52831L1.63445 6.94289V11.2946C1.63445 11.4664 1.5738 11.613 1.4525 11.7343C1.3312 11.8556 1.18463 11.9162 1.01278 11.9162Z" fill="#D752B2"/>
+-<path d="M12.154 12.0679C11.3454 12.0679 10.6378 11.896 10.0313 11.5523C9.42475 11.2087 8.94966 10.7386 8.60597 10.1422C8.27239 9.5357 8.1056 8.83822 8.1056 8.04976C8.1056 7.17033 8.27744 6.4223 8.62113 5.80568C8.97493 5.17896 9.42981 4.70386 9.98577 4.38039C10.5518 4.04681 11.1482 3.88002 11.775 3.88002C12.24 3.88002 12.6898 3.96595 13.1244 4.13779C13.5591 4.30963 13.9432 4.56234 14.2768 4.89592C14.6104 5.21939 14.8783 5.61362 15.0804 6.07861C15.2826 6.53349 15.3887 7.04397 15.3988 7.61004C15.3988 7.77178 15.3382 7.90824 15.2169 8.01944C15.0956 8.13063 14.9541 8.18623 14.7923 8.18623H8.80308L8.53016 7.14H14.3678L14.1252 7.35228V7.0187C14.0848 6.60425 13.9432 6.25046 13.7006 5.95731C13.4681 5.65406 13.18 5.42156 12.8364 5.25983C12.5028 5.09809 12.149 5.01723 11.775 5.01723C11.4717 5.01723 11.1685 5.07282 10.8652 5.18401C10.5721 5.2851 10.3042 5.45694 10.0616 5.69955C9.82909 5.93204 9.63703 6.23529 9.4854 6.60931C9.34389 6.98332 9.27313 7.43315 9.27313 7.95879C9.27313 8.54508 9.38937 9.06061 9.62187 9.50538C9.86447 9.95015 10.1981 10.3039 10.6226 10.5668C11.0472 10.8195 11.5425 10.9458 12.1085 10.9458C12.4623 10.9458 12.7707 10.9003 13.0335 10.8094C13.2963 10.7184 13.5237 10.6072 13.7158 10.4758C13.9079 10.3343 14.0696 10.1928 14.201 10.0512C14.3324 9.96026 14.4588 9.91477 14.5801 9.91477C14.7317 9.91477 14.853 9.96531 14.944 10.0664C15.0451 10.1675 15.0956 10.2888 15.0956 10.4303C15.0956 10.6021 15.0147 10.7538 14.853 10.8852C14.57 11.1985 14.1858 11.4765 13.7006 11.7191C13.2154 11.9516 12.6999 12.0679 12.154 12.0679Z" fill="#D752B2"/>
+-<path d="M20.8459 12.0679C20.0372 12.0679 19.3297 11.896 18.7232 11.5523C18.1166 11.2087 17.6415 10.7386 17.2979 10.1422C16.9643 9.5357 16.7975 8.83822 16.7975 8.04976C16.7975 7.17033 16.9693 6.4223 17.313 5.80568C17.6668 5.17896 18.1217 4.70386 18.6777 4.38039C19.2437 4.04681 19.8401 3.88002 20.4669 3.88002C20.9318 3.88002 21.3817 3.96595 21.8163 4.13779C22.251 4.30963 22.6351 4.56234 22.9687 4.89592C23.3023 5.21939 23.5702 5.61362 23.7723 6.07861C23.9745 6.53349 24.0806 7.04397 24.0907 7.61004C24.0907 7.77178 24.0301 7.90824 23.9088 8.01944C23.7875 8.13063 23.646 8.18623 23.4842 8.18623H17.495L17.222 7.14H23.0597L22.8171 7.35228V7.0187C22.7766 6.60425 22.6351 6.25046 22.3925 5.95731C22.16 5.65406 21.8719 5.42156 21.5282 5.25983C21.1947 5.09809 20.8409 5.01723 20.4669 5.01723C20.1636 5.01723 19.8604 5.07282 19.5571 5.18401C19.264 5.2851 18.9961 5.45694 18.7535 5.69955C18.521 5.93204 18.3289 6.23529 18.1773 6.60931C18.0358 6.98332 17.965 7.43315 17.965 7.95879C17.965 8.54508 18.0813 9.06061 18.3138 9.50538C18.5564 9.95015 18.8899 10.3039 19.3145 10.5668C19.739 10.8195 20.2344 10.9458 20.8004 10.9458C21.1542 10.9458 21.4625 10.9003 21.7254 10.8094C21.9882 10.7184 22.2156 10.6072 22.4077 10.4758C22.5997 10.3343 22.7615 10.1928 22.8929 10.0512C23.0243 9.96026 23.1507 9.91477 23.272 9.91477C23.4236 9.91477 23.5449 9.96531 23.6359 10.0664C23.7369 10.1675 23.7875 10.2888 23.7875 10.4303C23.7875 10.6021 23.7066 10.7538 23.5449 10.8852C23.2618 11.1985 22.8777 11.4765 22.3925 11.7191C21.9073 11.9516 21.3918 12.0679 20.8459 12.0679Z" fill="#D752B2"/>
+-<path d="M32.3732 0.695862C32.5451 0.695862 32.6866 0.756512 32.7978 0.877813C32.9191 0.989007 32.9797 1.13053 32.9797 1.30237V11.2946C32.9797 11.4664 32.9191 11.613 32.7978 11.7343C32.6866 11.8556 32.5451 11.9162 32.3732 11.9162C32.1913 11.9162 32.0447 11.8556 31.9335 11.7343C31.8223 11.613 31.7667 11.4664 31.7667 11.2946V9.85412L32.0548 9.74798C32.0548 9.99058 31.979 10.2483 31.8274 10.5213C31.6758 10.7841 31.4685 11.0318 31.2057 11.2642C30.9429 11.4967 30.6295 11.6888 30.2656 11.8404C29.9118 11.9921 29.5277 12.0679 29.1133 12.0679C28.436 12.0679 27.8194 11.891 27.2634 11.5372C26.7176 11.1834 26.2829 10.6982 25.9594 10.0816C25.6461 9.46494 25.4894 8.76241 25.4894 7.97395C25.4894 7.17538 25.6461 6.46779 25.9594 5.85117C26.2829 5.23456 26.7176 4.75441 27.2634 4.41072C27.8093 4.05692 28.4158 3.88002 29.0829 3.88002C29.5075 3.88002 29.9068 3.95078 30.2808 4.0923C30.6548 4.23382 30.9783 4.42588 31.2512 4.66848C31.5342 4.91109 31.7566 5.17896 31.9184 5.47211C32.0801 5.76525 32.161 6.0584 32.161 6.35154L31.7667 6.26056V1.30237C31.7667 1.13053 31.8223 0.989007 31.9335 0.877813C32.0447 0.756512 32.1913 0.695862 32.3732 0.695862ZM29.2497 10.9458C29.7551 10.9458 30.1999 10.8195 30.584 10.5668C30.9783 10.3039 31.2815 9.95015 31.4938 9.50538C31.7162 9.0505 31.8274 8.54002 31.8274 7.97395C31.8274 7.39777 31.7162 6.88729 31.4938 6.44252C31.2815 5.99775 30.9783 5.649 30.584 5.39629C30.1999 5.13347 29.7551 5.00206 29.2497 5.00206C28.7544 5.00206 28.3096 5.13347 27.9154 5.39629C27.5313 5.649 27.228 5.99775 27.0056 6.44252C26.7833 6.88729 26.6721 7.39777 26.6721 7.97395C26.6721 8.52991 26.7833 9.03534 27.0056 9.49022C27.228 9.93499 27.5313 10.2888 27.9154 10.5516C28.3096 10.8144 28.7544 10.9458 29.2497 10.9458Z" fill="#D752B2"/>
+-</svg>
+Index: dist/_nuxt/login_icon.ac253b47.js
+===================================================================
+diff --git a/dist/_nuxt/login_icon.ac253b47.js b/dist/_nuxt/login_icon.ac253b47.js
+deleted file mode 100644
+--- a/dist/_nuxt/login_icon.ac253b47.js	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-const o=""+new URL("login_icon.da3766fe.svg",import.meta.url).href;export{o as _};
+Index: dist/_nuxt/index.951168b3.css
+===================================================================
+diff --git a/dist/_nuxt/index.951168b3.css b/dist/_nuxt/index.951168b3.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.951168b3.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.signup-page[data-v-013cbf35]{align-items:center;display:flex;flex-grow:1;justify-content:center}.signup-page .signup-section[data-v-013cbf35]{align-items:center;display:flex;flex-direction:column;padding-bottom:90px}.signup-page .signup-section .header[data-v-013cbf35]{font-size:2.25rem;margin-bottom:95px}.signup-page .signup-section .inputs-group[data-v-013cbf35]{display:flex;flex-direction:column;height:360px;justify-content:space-between}.signup-page .signup-section .inputs-group input[data-v-013cbf35]{background:#161616;border:2px solid #323232;border-radius:50px;color:#ebebeb;font-size:1.25rem;height:60px;padding:0 40px;width:230px}.signup-page .signup-section .inputs-group input[data-v-013cbf35]:focus{border:2px solid #878787;outline:none}.signup-page .signup-section .signup-icon[data-v-013cbf35]{cursor:pointer;margin-top:60px}.signup-page .signup-section .signup-icon img[data-v-013cbf35]{transition:.15s}.signup-page .signup-section .signup-icon:hover img[data-v-013cbf35]{transform:scale(1.07)}.signup-page .signup-section .signup-icon:active img[data-v-013cbf35]{transform:scale(1);transition:.1s}.signup-page .signup-section .login-btn[data-v-013cbf35]{bottom:50px;font-size:1.75rem;position:absolute;right:100px;transition:.25s}.signup-page .signup-section .login-btn[data-v-013cbf35]:hover{transform:scale(1.05)}
+Index: dist/_nuxt/index.becdbd34.css
+===================================================================
+diff --git a/dist/_nuxt/index.becdbd34.css b/dist/_nuxt/index.becdbd34.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.becdbd34.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.home-page[data-v-fa055d9c]{height:200vh}.home-page .under-construction-sign[data-v-fa055d9c]{color:#878787;font-size:2.25rem;left:50%;position:absolute;text-align:center;top:60px;transform:translate(-50%)}.home-page .head-section[data-v-fa055d9c]{height:90vh;position:relative}.home-page .head-section .logo-section[data-v-fa055d9c]{display:inline-block;left:200px;position:absolute;top:230px}.home-page .head-section .logo-section span[data-v-fa055d9c]{color:#878787;display:block;font-size:1.5rem;margin-left:50px;margin-top:50px;width:450px}.home-page .head-section .text-logo[data-v-fa055d9c]{width:450px}.home-page .head-section .devices-image[data-v-fa055d9c]{bottom:220px;position:absolute;right:100px;width:950px}.home-page .content-section .first-paragraph[data-v-fa055d9c]{display:flex;justify-content:space-between;margin-left:200px;width:650px}.home-page .content-section .first-paragraph .pink-block[data-v-fa055d9c]{background-color:#d752b2;flex-shrink:0;height:80px;margin-top:8px;width:8px}.home-page .content-section .first-paragraph .text-group[data-v-fa055d9c]{margin-left:75px}.home-page .content-section .first-paragraph .text-group .header[data-v-fa055d9c]{font-size:2.25rem;letter-spacing:4px;margin:0 0 50px}.home-page .content-section .first-paragraph .text-group .content[data-v-fa055d9c]{color:#878787;font-size:1.5rem;margin:0}.home-page .content-section .icons-group[data-v-fa055d9c]{display:flex;justify-content:space-between;margin:300px 200px 0}.home-page .content-section .icons-group .gifts-group[data-v-fa055d9c],.home-page .content-section .icons-group .improve-group[data-v-fa055d9c],.home-page .content-section .icons-group .light-group[data-v-fa055d9c]{align-items:center;display:flex}.home-page .content-section .icons-group .gifts-group .text-group[data-v-fa055d9c],.home-page .content-section .icons-group .improve-group .text-group[data-v-fa055d9c],.home-page .content-section .icons-group .light-group .text-group[data-v-fa055d9c]{display:flex;flex-direction:column;margin-left:22px}.home-page .content-section .icons-group .gifts-group .header[data-v-fa055d9c],.home-page .content-section .icons-group .improve-group .header[data-v-fa055d9c],.home-page .content-section .icons-group .light-group .header[data-v-fa055d9c]{font-size:2rem;letter-spacing:3px;margin-bottom:20px}.home-page .content-section .icons-group .gifts-group .description[data-v-fa055d9c],.home-page .content-section .icons-group .improve-group .description[data-v-fa055d9c],.home-page .content-section .icons-group .light-group .description[data-v-fa055d9c]{color:#878787;width:240px}
+Index: dist/_nuxt/magnifier.1758c015.svg
+===================================================================
+diff --git a/dist/_nuxt/magnifier.1758c015.svg b/dist/_nuxt/magnifier.1758c015.svg
+deleted file mode 100644
+--- a/dist/_nuxt/magnifier.1758c015.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,3 +0,0 @@
+-<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.9731 12.2643C11.6408 13.3503 9.87694 14.0111 7.94369 14.0111C3.79298 14.0111 0.422852 10.9636 0.422852 7.2103C0.422852 3.457 3.79298 0.409546 7.94369 0.409546C12.0944 0.409546 15.4645 3.457 15.4645 7.2103C15.4645 8.95845 14.7338 10.5534 13.5329 11.7582L19.4229 17.0843L18.8631 17.5904L12.9731 12.2643ZM7.94369 1.12541C11.6574 1.12541 14.6729 3.85216 14.6729 7.2103C14.6729 10.5684 11.6574 13.2952 7.94369 13.2952C4.22998 13.2952 1.21452 10.5684 1.21452 7.2103C1.21452 3.85216 4.22998 1.12541 7.94369 1.12541Z" fill="#323232"/>
+-</svg>
+Index: dist/_nuxt/message_blue.a8248941.svg
+===================================================================
+diff --git a/dist/_nuxt/message_blue.a8248941.svg b/dist/_nuxt/message_blue.a8248941.svg
+deleted file mode 100644
+--- a/dist/_nuxt/message_blue.a8248941.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,3 +0,0 @@
+-<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M6.88014 1.81895C9.77914 1.81895 12.1377 3.70745 12.1377 6.02865C12.1377 8.61377 9.43319 10.2142 6.92746 10.2142C5.90907 10.2142 5.14831 10.0054 4.6173 9.87558C4.09155 10.1979 3.77925 10.4208 2.37128 10.8324C2.65256 10.1106 2.75088 9.38768 2.68726 8.59011C2.24721 8.06436 1.62261 7.32831 1.62261 6.02865C1.62261 3.70745 3.98114 1.81895 6.88014 1.81895ZM6.88014 0.767441C3.54792 0.767441 0.571106 2.98927 0.571106 6.02865C0.571106 7.10644 0.959637 8.16478 1.64732 8.98601C1.67624 9.94813 1.10948 11.3288 0.599497 12.334C1.9675 12.0869 3.91226 11.5412 4.79395 11.0007C5.53894 11.1821 6.25239 11.2651 6.92798 11.2651C10.6524 11.2651 13.1897 8.72208 13.1897 6.02812C13.1892 2.97297 10.1919 0.767441 6.88014 0.767441Z" fill="#2BA6EB"/>
+-</svg>
+Index: dist/_nuxt/message_blue.1f39f60f.js
+===================================================================
+diff --git a/dist/_nuxt/message_blue.1f39f60f.js b/dist/_nuxt/message_blue.1f39f60f.js
+deleted file mode 100644
+--- a/dist/_nuxt/message_blue.1f39f60f.js	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-const e=""+new URL("gift_yellow.494bf4db.svg",import.meta.url).href,s=""+new URL("message_blue.a8248941.svg",import.meta.url).href;export{e as _,s as a};
+Index: dist/_nuxt/heart_pink.4c6241f4.js
+===================================================================
+diff --git a/dist/_nuxt/heart_pink.4c6241f4.js b/dist/_nuxt/heart_pink.4c6241f4.js
+deleted file mode 100644
+--- a/dist/_nuxt/heart_pink.4c6241f4.js	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-const r=""+new URL("heart_pink.07adc358.svg",import.meta.url).href;export{r as _};
+Index: dist/_nuxt/feather.3ca8f2c5.svg
+===================================================================
+diff --git a/dist/_nuxt/feather.3ca8f2c5.svg b/dist/_nuxt/feather.3ca8f2c5.svg
+deleted file mode 100644
+--- a/dist/_nuxt/feather.3ca8f2c5.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,5 +0,0 @@
+-<svg width="87" height="88" viewBox="0 0 87 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M72.9159 45.1018C76.9502 41.0206 79.2166 35.4853 79.2166 29.7136C79.2166 23.942 76.9502 18.4067 72.9159 14.3255C68.8816 10.2443 63.41 7.95154 57.7047 7.95154C51.9993 7.95154 46.5277 10.2443 42.4934 14.3255L18.3059 38.7943V69.6068H48.7642L72.9159 45.1018Z" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-<path d="M57.7226 29.7318L7.55591 80.4818" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-<path d="M63.0976 55.1068H32.6393" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-</svg>
+Index: dist/_nuxt/gift_icon.18fcb48d.svg
+===================================================================
+diff --git a/dist/_nuxt/gift_icon.18fcb48d.svg b/dist/_nuxt/gift_icon.18fcb48d.svg
+deleted file mode 100644
+--- a/dist/_nuxt/gift_icon.18fcb48d.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,7 +0,0 @@
+-<svg width="86" height="88" viewBox="0 0 86 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M71.6666 44.4518V80.7018H14.3333V44.4518" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-<path d="M78.8334 26.3268H7.16669V44.4518H78.8334V26.3268Z" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-<path d="M43 80.7018V26.3268" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-<path d="M43 26.3268H26.875C24.4991 26.3268 22.2205 25.372 20.5405 23.6725C18.8605 21.9729 17.9167 19.6679 17.9167 17.2643C17.9167 14.8608 18.8605 12.5557 20.5405 10.8562C22.2205 9.15664 24.4991 8.20184 26.875 8.20184C39.4167 8.20184 43 26.3268 43 26.3268Z" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-<path d="M43 26.3268H59.125C61.5009 26.3268 63.7795 25.372 65.4595 23.6725C67.1395 21.9729 68.0833 19.6679 68.0833 17.2643C68.0833 14.8608 67.1395 12.5557 65.4595 10.8562C63.7795 9.15664 61.5009 8.20184 59.125 8.20184C46.5833 8.20184 43 26.3268 43 26.3268Z" stroke="#D752B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+-</svg>
+Index: dist/_nuxt/message_gray.ea504da1.svg
+===================================================================
+diff --git a/dist/_nuxt/message_gray.ea504da1.svg b/dist/_nuxt/message_gray.ea504da1.svg
+deleted file mode 100644
+--- a/dist/_nuxt/message_gray.ea504da1.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,10 +0,0 @@
+-<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<g clip-path="url(#clip0_1185_198)">
+-<path d="M12.124 3.5625C17.4083 3.5625 21.7074 7.1545 21.7074 11.5695C21.7074 16.4865 16.7777 19.5305 12.2103 19.5305C10.354 19.5305 8.96727 19.1335 7.99936 18.8865C7.04102 19.4995 6.47177 19.9235 3.90536 20.7065C4.41807 19.3335 4.59727 17.9585 4.48132 16.4415C3.67919 15.4415 2.54069 14.0415 2.54069 11.5695C2.54069 7.1545 6.83977 3.5625 12.124 3.5625V3.5625ZM12.124 1.5625C6.05011 1.5625 0.624023 5.7885 0.624023 11.5695C0.624023 13.6195 1.33223 15.6325 2.58573 17.1945C2.63844 19.0245 1.60536 21.6505 0.675773 23.5625C3.16936 23.0925 6.71423 22.0545 8.32136 21.0265C9.67931 21.3715 10.9798 21.5295 12.2112 21.5295C19.0001 21.5295 23.625 16.6925 23.625 11.5685C23.624 5.7575 18.1606 1.5625 12.124 1.5625V1.5625Z" fill="#323232"/>
+-</g>
+-<defs>
+-<clipPath id="clip0_1185_198">
+-<rect width="23" height="24" fill="white" transform="translate(0.624023 0.5625)"/>
+-</clipPath>
+-</defs>
+-</svg>
+Index: dist/_nuxt/delete.a0b9d0c0.svg
+===================================================================
+diff --git a/dist/_nuxt/delete.a0b9d0c0.svg b/dist/_nuxt/delete.a0b9d0c0.svg
+deleted file mode 100644
+--- a/dist/_nuxt/delete.a0b9d0c0.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,3 +0,0 @@
+-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.3455 13.5077L28.975 0.876081C29.2974 0.553664 29.7236 0.392456 30.1476 0.392456C31.0398 0.392456 31.8039 1.10796 31.8039 2.0465C31.8039 2.47271 31.6427 2.89671 31.3202 3.22133L18.6886 15.8508L31.318 28.4802C31.6427 28.8049 31.8039 29.2289 31.8039 29.6529C31.8039 30.5958 31.0332 31.3091 30.1476 31.3091C29.7236 31.3091 29.2974 31.1479 28.975 30.8255L16.3455 18.196L3.71608 30.8255C3.39367 31.1479 2.96746 31.3091 2.54346 31.3091C1.65792 31.3091 0.887207 30.5958 0.887207 29.6529C0.887207 29.2289 1.04841 28.8049 1.37304 28.4802L14.0025 15.8508L1.37083 3.22133C1.04842 2.89671 0.887207 2.47271 0.887207 2.0465C0.887207 1.10796 1.65129 0.392456 2.54346 0.392456C2.96746 0.392456 3.39367 0.553664 3.71608 0.876081L16.3455 13.5077Z" fill="#FF0E35"/>
+-</svg>
+Index: dist/_nuxt/index.81098e9b.css
+===================================================================
+diff --git a/dist/_nuxt/index.81098e9b.css b/dist/_nuxt/index.81098e9b.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.81098e9b.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.account-page[data-v-d66fdb29]{display:flex;height:calc(100vh - 140px);justify-content:center}.account-page .main-section[data-v-d66fdb29]{align-items:center;display:flex;flex-direction:column;width:400px}.account-page .main-section .account-name[data-v-d66fdb29]{font-size:2.25rem;margin:100px 0 90px}.account-page .main-section .email-group[data-v-d66fdb29],.account-page .main-section .password-group[data-v-d66fdb29]{margin-bottom:28px;width:100%}.account-page .main-section .email-group .header[data-v-d66fdb29],.account-page .main-section .password-group .header[data-v-d66fdb29]{color:#323232;display:block;font-size:1.125rem;font-weight:700;margin-bottom:4px}.account-page .main-section .email-group .email[data-v-d66fdb29],.account-page .main-section .email-group .password[data-v-d66fdb29],.account-page .main-section .password-group .email[data-v-d66fdb29],.account-page .main-section .password-group .password[data-v-d66fdb29]{display:block;font-size:1.25rem}.account-page .main-section .email-group[data-v-d66fdb29]{border-top:1px solid #323232;padding-top:35px}.account-page .main-section .password-group[data-v-d66fdb29]{border-bottom:1px solid #323232;margin:0;padding-bottom:35px}.account-page .main-section .password-group .password[data-v-d66fdb29]{margin-bottom:4px}.account-page .main-section .password-group .change-password-button[data-v-d66fdb29]{color:#d752b2;font-size:.875rem;padding-left:1px;transition:.25s}.account-page .main-section .log-out-button[data-v-d66fdb29]{align-self:flex-end;color:#d752b2;font-size:1.75rem;margin-top:10px;transition:.15s}.account-page .main-section .log-out-button[data-v-d66fdb29]:hover{color:#878787;transform:scale(.98)}
+Index: dist/_nuxt/heart_pink.07adc358.svg
+===================================================================
+diff --git a/dist/_nuxt/heart_pink.07adc358.svg b/dist/_nuxt/heart_pink.07adc358.svg
+deleted file mode 100644
+--- a/dist/_nuxt/heart_pink.07adc358.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,3 +0,0 @@
+-<svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M28.7979 3.55295C32.5873 3.55295 35.9361 6.04107 35.9361 11.0491C35.9361 18.9446 25.5509 24.2486 20.0227 30.0361C14.4944 24.2486 4.1108 18.9462 4.1108 11.0507C4.1108 6.19061 7.30527 3.55295 11.249 3.55295C16.308 3.55295 18.9584 9.35008 20.0227 12.0036C21.0838 9.35326 23.7342 3.55295 28.7979 3.55295ZM28.7979 0.371216C25.3393 0.371216 21.884 2.06072 20.0227 5.81039C18.1614 2.06072 14.706 0.371216 11.249 0.371216C5.8353 0.371216 0.933838 4.17339 0.933838 11.0125C0.933838 22.5781 16.6882 28.4134 20.0227 35.3703C23.3571 28.4134 39.1131 22.5781 39.1131 11.0125C39.1131 3.71681 33.6819 0.371216 28.7979 0.371216Z" fill="#D752B2"/>
+-</svg>
+Index: dist/_nuxt/index.f0bb05d6.css
+===================================================================
+diff --git a/dist/_nuxt/index.f0bb05d6.css b/dist/_nuxt/index.f0bb05d6.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.f0bb05d6.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.customer-page[data-v-07b6a0b5]{align-items:center;display:flex;flex-direction:column;height:calc(100vh - 140px)}.customer-page .header-section[data-v-07b6a0b5]{margin-top:170px;position:relative}.customer-page .header-section .customer-email[data-v-07b6a0b5],.customer-page .header-section .customer-name[data-v-07b6a0b5],.customer-page .header-section .profile-name[data-v-07b6a0b5]{font-size:1.75rem;text-align:center}.customer-page .header-section .stats-icons[data-v-07b6a0b5]{align-items:center;display:flex;justify-content:center;margin-top:4px}.customer-page .header-section .stats-icons .gifts-stats[data-v-07b6a0b5],.customer-page .header-section .stats-icons .messages-stats[data-v-07b6a0b5]{align-items:center;display:flex}.customer-page .header-section .stats-icons .gifts-stats img[data-v-07b6a0b5],.customer-page .header-section .stats-icons .messages-stats img[data-v-07b6a0b5]{width:18px}.customer-page .header-section .stats-icons .gifts-stats span[data-v-07b6a0b5],.customer-page .header-section .stats-icons .messages-stats span[data-v-07b6a0b5]{color:#cfc146;font-size:1.125rem;margin-left:5px}.customer-page .header-section .stats-icons .messages-stats[data-v-07b6a0b5]{margin-left:25px}.customer-page .header-section .stats-icons .messages-stats span[data-v-07b6a0b5]{color:#2ba6eb}.customer-page .header-section .info-button[data-v-07b6a0b5]{fill:#878787;cursor:pointer;position:absolute;right:-50px;top:-30px;transition:.15s}.customer-page .header-section .info-button[data-v-07b6a0b5]:hover{fill:#ebebeb}.customer-page .header-section .customer-email[data-v-07b6a0b5]{color:#878787;font-size:1rem;margin-top:8px}.customer-page .body-section[data-v-07b6a0b5]{margin-top:130px;max-width:230px;position:relative}.customer-page .body-section[data-v-07b6a0b5],.customer-page .body-section .flex-column[data-v-07b6a0b5]{align-items:center;display:flex;flex-direction:column}.customer-page .body-section .customer-email[data-v-07b6a0b5],.customer-page .body-section .customer-name[data-v-07b6a0b5]{border:none;border-bottom:1px solid #878787;color:#ebebeb;font-size:1.25rem;margin-bottom:35px;text-align:center;width:200px}.customer-page .body-section .customer-name[data-v-07b6a0b5]{margin-top:50px;width:150px}.customer-page .body-section .next-button[data-v-07b6a0b5]{align-items:center;bottom:-50px;cursor:pointer;display:flex;position:absolute;right:-60px}.customer-page .body-section .next-button span[data-v-07b6a0b5]{color:#d752b2;font-size:1.125rem}.customer-page .body-section .next-button svg[data-v-07b6a0b5]{fill:#d752b2;height:16px;margin-left:6px;transition:.15s;width:9px}.customer-page .body-section .next-button:hover svg[data-v-07b6a0b5]{transform:translate(2px)}.customer-page .body-section .back-button:hover svg[data-v-07b6a0b5]{transform:translate(-2px)}.customer-page .body-section .textarea-input[data-v-07b6a0b5]{-webkit-user-modify:read-write;border-bottom:2px solid #323232;color:#ebebeb;display:block;font-size:1.125rem;-webkit-line-break:after-white-space;margin:0 auto;min-height:30px;outline:none;overflow-wrap:break-word;text-align:center;width:280px}.customer-page .body-section .textarea-input[contenteditable][data-v-07b6a0b5]:empty:before{color:#878787;content:"What would you like to tell us";pointer-events:none}.customer-page .body-section .textarea-input[contenteditable][data-v-07b6a0b5]:focus:before{content:""}.customer-page .body-section .buttons-group[data-v-07b6a0b5]{align-items:center;display:flex;justify-content:space-between;margin-top:100px;width:350px}.customer-page .body-section .buttons-group .back-button[data-v-07b6a0b5]{align-items:center;display:flex}.customer-page .body-section .buttons-group .back-button span[data-v-07b6a0b5]{color:#878787;font-size:1.125rem}.customer-page .body-section .buttons-group .back-button svg[data-v-07b6a0b5]{fill:#878787;height:16px;margin-right:6px;transition:.15s;width:9px}.customer-page .body-section .buttons-group .send-button[data-v-07b6a0b5]{border:1px solid #323232;border-radius:45px;color:#d752b2;cursor:pointer;font-size:1.125rem;padding:8px 34px;transition:.15s}.customer-page .body-section .buttons-group .send-button[data-v-07b6a0b5]:hover{transform:scale(1.03)}.customer-page .body-section .buttons-group .send-button.clicked[data-v-07b6a0b5]{opacity:.6;pointer-events:none}.customer-page .thanks[data-v-07b6a0b5]{color:#d752b2;font-size:3rem;margin:120px 0 50px;text-align:center;width:350px}.customer-page .sent-status[data-v-07b6a0b5]{color:#268f31;font-size:.875rem;text-align:center}
+Index: dist/_nuxt/gift_yellow.494bf4db.svg
+===================================================================
+diff --git a/dist/_nuxt/gift_yellow.494bf4db.svg b/dist/_nuxt/gift_yellow.494bf4db.svg
+deleted file mode 100644
+--- a/dist/_nuxt/gift_yellow.494bf4db.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,3 +0,0 @@
+-<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M6.41673 12.8597H1.68496V6.55069H6.41673V12.8597ZM6.41673 3.39618H0.633453V5.49919H6.41673V3.39618ZM7.46824 12.8597H12.2V6.55069H7.46824V12.8597ZM7.46824 3.39618V5.49919H13.2515V3.39618H7.46824ZM9.76525 0.241661C8.21586 0.241661 7.30946 2.0697 6.94249 2.87042H9.75263C11.5891 2.87042 11.6085 0.241661 9.76525 0.241661ZM9.34675 2.14541H8.27264C8.66117 1.55604 9.0292 1.11178 9.50395 1.11178C10.1201 1.11178 10.1496 2.14541 9.34675 2.14541ZM4.13234 2.87042H6.94249C6.57551 2.0697 5.66911 0.241661 4.11972 0.241661C2.27643 0.241661 2.29588 2.87042 4.13234 2.87042ZM4.38102 1.11178C4.85577 1.11178 5.2238 1.55604 5.61233 2.14541H4.53822C3.73539 2.14541 3.76484 1.11178 4.38102 1.11178Z" fill="#CFC146"/>
+-</svg>
+Index: dist/_nuxt/login_icon.da3766fe.svg
+===================================================================
+diff --git a/dist/_nuxt/login_icon.da3766fe.svg b/dist/_nuxt/login_icon.da3766fe.svg
+deleted file mode 100644
+--- a/dist/_nuxt/login_icon.da3766fe.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,4 +0,0 @@
+-<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M25.0482 37.3686C25.0482 37.3686 32.717 29.3285 35.7038 26.1982C35.9542 25.9376 36.0786 25.595 36.0786 25.2523C36.0786 24.9096 35.9542 24.567 35.7038 24.3064C32.7187 21.1761 25.0516 13.1396 25.0516 13.1396C24.8046 12.8808 24.4792 12.7523 24.1537 12.7523C23.8283 12.7541 23.5012 12.8844 23.2507 13.1467C22.7515 13.6697 22.7498 14.5138 23.2439 15.0332L31.722 23.9138L1.35646 23.9138C0.65109 23.9138 0.0786153 24.5135 0.0786153 25.2523C0.0786152 25.9912 0.651089 26.5908 1.35646 26.5908L31.722 26.5908L23.2405 35.4768C22.7481 35.9926 22.7515 36.835 23.2507 37.3579C23.5012 37.6202 23.8283 37.7523 24.1537 37.7523C24.4792 37.7541 24.8012 37.6256 25.0482 37.3686Z" fill="#EBEBEB"/>
+-<path d="M47.4122 25.2523C47.4122 37.5253 37.8609 47.4745 26.0788 47.4745C17.4472 47.4745 10.0128 42.1346 6.65422 34.4532C6.4276 33.9349 5.92354 33.5857 5.35787 33.5857V33.5857C4.41876 33.5857 3.75907 34.5088 4.12677 35.3729C7.85644 44.138 16.2821 50.2523 26.0788 50.2523C39.3337 50.2523 50.0788 39.0594 50.0788 25.2523C50.0788 11.4452 39.3337 0.252319 26.0788 0.252319C16.2821 0.252319 7.85644 6.36666 4.12677 15.1317C3.75907 15.9959 4.41876 16.919 5.35787 16.919V16.919C5.92354 16.919 6.4276 16.5698 6.65422 16.0515C10.0128 8.37 17.4472 3.0301 26.0788 3.0301C37.8609 3.0301 47.4122 12.9793 47.4122 25.2523Z" fill="#323232"/>
+-</svg>
+Index: dist/_nuxt/index.fa4b5a44.css
+===================================================================
+diff --git a/dist/_nuxt/index.fa4b5a44.css b/dist/_nuxt/index.fa4b5a44.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.fa4b5a44.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.liked-messages-list-page[data-v-423f8e9a]{height:calc(100vh - 140px)}
+Index: dist/_nuxt/index.466bf3a5.css
+===================================================================
+diff --git a/dist/_nuxt/index.466bf3a5.css b/dist/_nuxt/index.466bf3a5.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.466bf3a5.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.messages-page[data-v-3774d5b2]{align-items:center;display:flex;flex-direction:column;flex-grow:1;justify-content:center;padding:150px 0 200px}.messages-page .message-body[data-v-3774d5b2]{border:2px solid #323232;border-radius:35px;display:flex;flex-direction:column;min-height:150px;position:relative;width:500px}.messages-page .message-body .top-icons-group[data-v-3774d5b2]{align-items:center;display:flex;justify-content:space-between;position:absolute;top:-70px;width:100%}.messages-page .message-body .top-icons-group .list-mode-icon[data-v-3774d5b2]{fill:#878787;cursor:pointer;margin:12px 0 0 10px;transition:.15s}.messages-page .message-body .top-icons-group .list-mode-icon[data-v-3774d5b2]:hover{fill:#ebebeb;transform:scale(1.07)}.messages-page .message-body .top-icons-group .list-mode-icon[data-v-3774d5b2]:active{transform:scale(1);transition:.1s}.messages-page .message-body .top-icons-group .messages-count[data-v-3774d5b2]{margin-right:15px}.messages-page .message-body .top-icons-group .messages-count img[data-v-3774d5b2]{margin:6px 5px 0 0}.messages-page .message-body .top-icons-group .messages-count span[data-v-3774d5b2]{color:#323232;font-size:2rem}.messages-page .message-body .customer-name[data-v-3774d5b2]{color:#878787;font-size:1.25rem;margin:30px 0 0 35px}.messages-page .message-body .customer-message[data-v-3774d5b2]{font-size:1.25rem;margin:25px 0 50px 35px;width:350px}.messages-page .message-body .date[data-v-3774d5b2]{bottom:18px;color:#323232;font-size:.875rem;font-weight:700;position:absolute;right:40px}.messages-page .buttons-group[data-v-3774d5b2]{display:flex;justify-content:space-between;margin-top:110px;width:260px}.messages-page .buttons-group .delete-button[data-v-3774d5b2],.messages-page .buttons-group .like-button[data-v-3774d5b2]{background:none;border:none;cursor:pointer;transition:.15s}.messages-page .buttons-group .delete-button[data-v-3774d5b2]:hover,.messages-page .buttons-group .like-button[data-v-3774d5b2]:hover{transform:scale(1.07)}.messages-page .buttons-group .delete-button[data-v-3774d5b2]:active,.messages-page .buttons-group .like-button[data-v-3774d5b2]:active{transform:scale(1);transition:.1s}
+Index: dist/_nuxt/gift_pink.8172d0d5.svg
+===================================================================
+diff --git a/dist/_nuxt/gift_pink.8172d0d5.svg b/dist/_nuxt/gift_pink.8172d0d5.svg
+deleted file mode 100644
+--- a/dist/_nuxt/gift_pink.8172d0d5.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,3 +0,0 @@
+-<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M12.5417 26.0631H3.03937V13.3932H12.5417V26.0631ZM12.5417 7.05831H0.927734V11.2816H12.5417V7.05831ZM14.6534 26.0631H24.1558V13.3932H14.6534V26.0631ZM14.6534 7.05831V11.2816H26.2674V7.05831H14.6534ZM19.2663 0.723389C16.1548 0.723389 14.3345 4.39447 13.5976 6.00249H19.2409C22.9289 6.00249 22.968 0.723389 19.2663 0.723389ZM18.4258 4.54651H16.2688C17.049 3.36294 17.7881 2.47077 18.7415 2.47077C19.9789 2.47077 20.0381 4.54651 18.4258 4.54651ZM7.95421 6.00249H13.5976C12.8606 4.39447 11.0404 0.723389 7.92887 0.723389C4.22717 0.723389 4.26624 6.00249 7.95421 6.00249ZM8.45362 2.47077C9.40702 2.47077 10.1461 3.36294 10.9263 4.54651H8.76931C7.15707 4.54651 7.21619 2.47077 8.45362 2.47077Z" fill="#D752B2"/>
+-</svg>
+Index: dist/_nuxt/default.e7cbd0e2.css
+===================================================================
+diff --git a/dist/_nuxt/default.e7cbd0e2.css b/dist/_nuxt/default.e7cbd0e2.css
+deleted file mode 100644
+--- a/dist/_nuxt/default.e7cbd0e2.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.nav-bar[data-v-e91954e1]{align-items:center;display:flex;height:140px;justify-content:space-between;padding:0 75px 0 50px}.nav-bar h1[data-v-e91954e1]{font-size:1.5rem}.nav-bar h1[data-v-e91954e1],.nav-bar h2[data-v-e91954e1]{font-weight:400;margin:0}.nav-bar h2[data-v-e91954e1]{color:#d752b2;font-size:.875rem}.nav-bar .icon-logo[data-v-e91954e1]{height:45px;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:45px}.nav-bar button[data-v-e91954e1]{background:none;border:none;padding:0}.icon-logo[data-v-e91954e1],.login-btn[data-v-e91954e1]{cursor:pointer}.login-btn[data-v-e91954e1]{font-size:1.5rem;text-decoration:none;transition:.25s;-webkit-user-select:none;-moz-user-select:none;user-select:none}.login-btn[data-v-e91954e1]:hover{transform:scale(1.07)}.nav-bar[data-v-32fa7ccb]{align-items:center;display:flex;height:140px;justify-content:space-between;padding:0 75px 0 50px}.nav-bar h1[data-v-32fa7ccb]{font-size:1.5rem}.nav-bar h1[data-v-32fa7ccb],.nav-bar h2[data-v-32fa7ccb]{font-weight:400;margin:0}.nav-bar h2[data-v-32fa7ccb]{color:#d752b2;font-size:.875rem}.nav-bar .icon-logo[data-v-32fa7ccb]{height:45px;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:45px}.nav-bar button[data-v-32fa7ccb]{background:none;border:none;padding:0}.left-group[data-v-32fa7ccb]{align-items:center;display:flex}.left-group .profile-group[data-v-32fa7ccb]{margin-left:60px}.left-group .profile-group .name-group[data-v-32fa7ccb]{align-items:center;color:#878787;cursor:pointer;display:flex;font-size:1.5rem;margin:0;padding:0;transition:.25s}.left-group .profile-group .name-group .arrow-icon[data-v-32fa7ccb]{fill:#878787;margin-left:15px;transition:.25s}.left-group .profile-group .name-group[data-v-32fa7ccb]:hover{color:#ebebeb}.left-group .profile-group .name-group:hover .arrow-icon[data-v-32fa7ccb]{fill:#ebebeb;transform:translate(3px)}.left-group .profile-group .stats-icons[data-v-32fa7ccb]{align-items:center;display:flex}.left-group .profile-group .stats-icons .gifts-stats[data-v-32fa7ccb],.left-group .profile-group .stats-icons .messages-stats[data-v-32fa7ccb]{align-items:center;display:flex;margin-left:2px}.left-group .profile-group .stats-icons .gifts-stats img[data-v-32fa7ccb],.left-group .profile-group .stats-icons .messages-stats img[data-v-32fa7ccb]{width:16px}.left-group .profile-group .stats-icons .gifts-stats span[data-v-32fa7ccb],.left-group .profile-group .stats-icons .messages-stats span[data-v-32fa7ccb]{color:#cfc146;font-size:1rem;margin-left:5px}.left-group .profile-group .stats-icons .messages-stats[data-v-32fa7ccb]{margin-left:25px}.left-group .profile-group .stats-icons .messages-stats span[data-v-32fa7ccb]{color:#2ba6eb}.right-group[data-v-32fa7ccb]{align-items:center;display:flex}.right-group .icons-group[data-v-32fa7ccb]{display:flex;justify-content:space-between;width:250px}.right-group .icons-group .gift-icon[data-v-32fa7ccb],.right-group .icons-group .heart-icon[data-v-32fa7ccb],.right-group .icons-group .message-icon[data-v-32fa7ccb]{fill:#878787;cursor:pointer;height:30px;transition:.15s;width:30px}.right-group .icons-group .gift-icon[data-v-32fa7ccb]:hover,.right-group .icons-group .heart-icon[data-v-32fa7ccb]:hover,.right-group .icons-group .message-icon[data-v-32fa7ccb]:hover{fill:#ebebeb;transform:scale(1.1)}.right-group .icons-group .gift-icon[data-v-32fa7ccb]:active,.right-group .icons-group .heart-icon[data-v-32fa7ccb]:active,.right-group .icons-group .message-icon[data-v-32fa7ccb]:active{transform:scale(1);transition:.1s}.right-group .account-group[data-v-32fa7ccb]{align-items:flex-end;cursor:pointer;display:flex;flex-direction:column;margin-left:60px}.right-group .account-group .user-name[data-v-32fa7ccb]{font-size:1.5rem}.right-group .account-group .my-account[data-v-32fa7ccb]{color:#d752b2;font-size:.875rem}.right-group .account-group:hover .my-account[data-v-32fa7ccb]{transform:scale(1.05)}.default-layout[data-v-3e07418c]{display:flex;flex-direction:column;min-height:100vh}
+Index: dist/_nuxt/iconLogo.9966e105.svg
+===================================================================
+diff --git a/dist/_nuxt/iconLogo.9966e105.svg b/dist/_nuxt/iconLogo.9966e105.svg
+deleted file mode 100644
+--- a/dist/_nuxt/iconLogo.9966e105.svg	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,4 +0,0 @@
+-<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+-<path d="M22.7118 38.3408C22.1635 37.3912 20.7119 37.7801 20.7119 38.8767L20.7119 44.0713C20.7119 46.5464 23.3913 48.0933 25.5348 46.8558L47.2379 34.3255C49.3814 33.0879 49.3814 29.994 47.2379 28.7564L25.5348 16.2261C23.3913 14.9886 20.7119 16.5355 20.7119 19.0106L20.7119 23.872C20.7119 24.0602 20.7614 24.245 20.8554 24.4079V24.4079C21.4037 25.3575 22.8554 24.9686 22.8554 23.872L22.8554 19.0106C22.8554 18.1856 23.7485 17.6699 24.463 18.0825L46.1661 30.6128C46.8806 31.0253 46.8806 32.0566 46.1661 32.4691L24.463 44.9994C23.7485 45.4119 22.8554 44.8963 22.8554 44.0713L22.8554 38.8767C22.8554 38.6885 22.8058 38.5037 22.7118 38.3408V38.3408Z" fill="#6A1FE6"/>
+-<path d="M27.9769 12.7239C28.5252 13.6735 29.9768 13.2845 29.9768 12.188L29.9768 6.99344C29.9768 4.51832 27.2974 2.97136 25.1539 4.20892L3.45078 16.7392C1.30726 17.9768 1.30727 21.0707 3.45078 22.3083L25.1539 34.8386C27.2974 36.0761 29.9768 34.5292 29.9768 32.0541L29.9768 27.1927C29.9768 27.0045 29.9273 26.8197 29.8332 26.6568V26.6568C29.285 25.7072 27.8333 26.0961 27.8333 27.1927L27.8333 32.0541C27.8333 32.8791 26.9402 33.3947 26.2257 32.9822L4.52255 20.4519C3.80804 20.0394 3.80804 19.0081 4.52254 18.5956L26.2257 6.06527C26.9402 5.65275 27.8333 6.1684 27.8333 6.99344L27.8333 12.188C27.8333 12.3762 27.8828 12.561 27.9769 12.7239V12.7239Z" fill="#D752B2"/>
+-</svg>
+Index: dist/_nuxt/index.df6f8994.css
+===================================================================
+diff --git a/dist/_nuxt/index.df6f8994.css b/dist/_nuxt/index.df6f8994.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.df6f8994.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.gift-code-page[data-v-0328c7cb]{flex-grow:1;justify-content:center}.gift-code-page[data-v-0328c7cb],.gift-code-page .code-group[data-v-0328c7cb]{align-items:center;display:flex;flex-direction:column}.gift-code-page .code-group[data-v-0328c7cb]{position:relative}.gift-code-page .code-group .reward[data-v-0328c7cb]{color:#d752b2;font-size:4.5rem;margin-bottom:50px}.gift-code-page .code-group input[data-v-0328c7cb]{border:2px solid #323232;border-radius:30px;color:#ebebeb;font-size:1.125rem;height:11px;margin-bottom:16px;padding:17px 25px;text-align:center;width:145px}.gift-code-page .code-group button[data-v-0328c7cb]{border:2px solid #323232;border-radius:30px;color:#268f31;font-size:1.125rem;height:36px;transition:.15s;width:112px}.gift-code-page .code-group button[data-v-0328c7cb]:hover{transform:scale(1.05)}.gift-code-page .code-group .back-button[data-v-0328c7cb]{fill:#878787;background:none;border:none;bottom:100px;cursor:pointer;left:-250px;position:absolute}.gift-code-page .code-group .back-button svg[data-v-0328c7cb]{height:42px;transition:.15s;width:41px}.gift-code-page .code-group .back-button:hover svg[data-v-0328c7cb]{fill:#ebebeb}.gift-code-page .code-group .back-button:active svg[data-v-0328c7cb]{transform:translate(-3px);transition:.1s}.gift-code-page .customer-group[data-v-0328c7cb]{margin-top:70px;width:190px}.gift-code-page .customer-group .customer[data-v-0328c7cb]{display:flex;justify-content:space-between;width:100%}.gift-code-page .customer-group .customer .code[data-v-0328c7cb]{font-size:1.125rem}.gift-code-page .customer-group p[data-v-0328c7cb]{color:#878787;font-size:.875rem;max-height:120px;overflow:scroll;text-align:center}.gift-code-page .customer-group p[data-v-0328c7cb]::-webkit-scrollbar{display:none}.gift-code-page .customer-group p[data-v-0328c7cb]{-ms-overflow-style:none;scrollbar-width:none}
+Index: dist/_nuxt/index.2ae01be6.css
+===================================================================
+diff --git a/dist/_nuxt/index.2ae01be6.css b/dist/_nuxt/index.2ae01be6.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.2ae01be6.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.messages-list-page[data-v-818dcec3]{height:calc(100vh - 140px)}
+Index: dist/_nuxt/index.92fb6f65.css
+===================================================================
+diff --git a/dist/_nuxt/index.92fb6f65.css b/dist/_nuxt/index.92fb6f65.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.92fb6f65.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-@charset "UTF-8";.login-page[data-v-a861321c]{align-items:center;display:flex;flex-grow:1;justify-content:center}.login-page .login-section[data-v-a861321c]{align-items:center;display:flex;flex-direction:column;padding-bottom:70px}.login-page .login-section .header[data-v-a861321c]{font-size:2.25rem;margin-bottom:95px}.login-page .login-section .errorMessage[data-v-a861321c]{color:#ff0e35;position:absolute;top:350px}.login-page .login-section .email-input[data-v-a861321c],.login-page .login-section .password-input[data-v-a861321c]{background:#161616;border:2px solid #323232;border-radius:50px;color:#ebebeb;font-size:1.25rem;height:60px;padding:0 40px;width:230px}.login-page .login-section .email-input[data-v-a861321c]:focus,.login-page .login-section .password-input[data-v-a861321c]:focus{border:2px solid #878787;outline:none}.login-page .login-section .email-input[data-v-a861321c]{margin-bottom:45px}.login-page .login-section .email-input[data-v-a861321c]:-webkit-autofill,.login-page .login-section .password-input[data-v-a861321c]:-webkit-autofill{-webkit-text-fill-color:#ebebeb!important;-webkit-transition:background-color 5000s ease-in-out 0s;transition:background-color 5000s ease-in-out 0s}.login-page .login-section .email-input.error[data-v-a861321c],.login-page .login-section .password-input.error[data-v-a861321c]{border:2px solid #ff0e35}.login-page .login-section .email-input.error[data-v-a861321c]:focus,.login-page .login-section .password-input.error[data-v-a861321c]:focus{border:2px solid #ff0e35;outline:none}.login-page .login-section .login-options[data-v-a861321c]{align-items:center;display:flex;justify-content:space-between;padding-top:30px;width:310px}.login-page .login-section .login-options .check-box-wrap[data-v-a861321c]{align-items:center;cursor:pointer;display:flex;-webkit-user-select:none;-moz-user-select:none;user-select:none}.login-page .login-section .login-options .check-box-wrap input[type=checkbox][data-v-a861321c]{-moz-appearance:none;appearance:none;-webkit-appearance:none;background-color:#161616;border:2px solid #323232;border-radius:5px;cursor:pointer;height:20px;margin-right:8px;outline:none;position:relative;width:20px}.login-page .login-section .login-options .check-box-wrap input[type=checkbox][data-v-a861321c]:checked:after{color:#878787;content:"\2714";font-size:13px;left:3px;position:absolute;top:-1px}.login-page .login-section .login-options a[data-v-a861321c]{color:#d752b2;transition:.15s}.login-page .login-section .login-icon[data-v-a861321c]{cursor:pointer;margin-top:85px}.login-page .login-section .login-icon img[data-v-a861321c]{transition:.15s}.login-page .login-section .login-icon:hover img[data-v-a861321c]{transform:scale(1.07)}.login-page .login-section .login-icon:active img[data-v-a861321c]{transform:scale(1);transition:.1s}.login-page .login-section .signup-btn[data-v-a861321c]{bottom:50px;font-size:1.75rem;position:absolute;right:100px;transition:.25s}.login-page .login-section .signup-btn[data-v-a861321c]:hover{transform:scale(1.05)}
+Index: dist/_nuxt/index.72dfcf82.css
+===================================================================
+diff --git a/dist/_nuxt/index.72dfcf82.css b/dist/_nuxt/index.72dfcf82.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.72dfcf82.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.new-profile-page[data-v-8665a5f2]{align-items:center;display:flex;flex-direction:column;flex-grow:1;justify-content:center}.new-profile-page .header[data-v-8665a5f2]{font-size:2.25rem;margin-bottom:100px;-webkit-user-select:none;-moz-user-select:none;user-select:none}.new-profile-page .input-group[data-v-8665a5f2]{display:grid;place-items:center;position:relative}.new-profile-page .input-group input[data-v-8665a5f2]{background:none;border:none;border-bottom:2px solid #878787;color:#ebebeb;font-size:1.5rem;height:38px;outline:none;padding-bottom:5px;text-align:center;width:270px}.new-profile-page .input-group .back-button[data-v-8665a5f2]{fill:#878787;background:none;border:none;cursor:pointer;left:-200px;position:absolute;top:-75px}.new-profile-page .input-group .back-button svg[data-v-8665a5f2]{height:42px;transition:.15s;width:41px}.new-profile-page .input-group .back-button:hover svg[data-v-8665a5f2]{fill:#ebebeb}.new-profile-page .input-group .back-button:active svg[data-v-8665a5f2]{transform:translate(-3px);transition:.1s}.new-profile-page .create-button[data-v-8665a5f2]{background-color:#161616;border:1px solid #323232;border-radius:20px;color:#d752b2;cursor:pointer;font-size:1rem;margin:75px 0 150px;padding:8px 30px;transition:.15s;-webkit-user-select:none;-moz-user-select:none;user-select:none}.new-profile-page .create-button[data-v-8665a5f2]:hover{transform:scale(1.03)}.new-profile-page .create-button[data-v-8665a5f2]:active{transform:scale(1);transition:.1s}
+Index: dist/_nuxt/index.8852b4bd.css
+===================================================================
+diff --git a/dist/_nuxt/index.8852b4bd.css b/dist/_nuxt/index.8852b4bd.css
+deleted file mode 100644
+--- a/dist/_nuxt/index.8852b4bd.css	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
++++ /dev/null	(revision 6d72bf690ed344a1fcf46caa4d42bef9a5768b44)
+@@ -1,1 +0,0 @@
+-.change-password-page[data-v-7dbfdc73]{align-items:center;display:flex;flex-direction:column;height:calc(100vh - 140px)}.change-password-page .header[data-v-7dbfdc73]{color:#878787;font-size:1.5rem;margin:150px 0 60px}.change-password-page input[data-v-7dbfdc73]{background:#161616;border:2px solid #323232;border-radius:50px;color:#ebebeb;font-size:1.25rem;height:50px;margin-bottom:25px;padding:0 40px;width:200px}.change-password-page .change-button[data-v-7dbfdc73]{background-color:#161616;border:1px solid #323232;border-radius:20px;color:#d752b2;cursor:pointer;font-size:1rem;margin-top:40px;padding:8px 30px;transition:.15s;-webkit-user-select:none;-moz-user-select:none;user-select:none}.change-password-page .change-button[data-v-7dbfdc73]:hover{transform:scale(1.03)}.change-password-page .change-button[data-v-7dbfdc73]:active{transform:scale(1);transition:.1s}

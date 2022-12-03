@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc61e5c6-589d-4176-b8eb-05ab82fb39ab" name="Changes" comment="feat:  add under construction sign">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/app.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/components.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/Quicksand-Light.a9f4ef65.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/Quicksand-Medium.c1e54885.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/Quicksand-Regular.387d712e.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/ScrollList.6dbbb3a7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/default.62629728.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/default.ee33beae.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/delete.a0b9d0c0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/devices.b0f0322d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/entry.444a1d40.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/entry.73f45475.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-404.18ced855.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-404.35243b35.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-500.1ae2abff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-500.e60962de.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-component.b47d0991.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/gift_pink.8172d0d5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/gift_yellow.494bf4db.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/heart_pink.07adc358.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/heart_pink.4c6241f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/iconLogo.9966e105.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.0572f82c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.211acbde.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.261ac6a6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.2ae01be6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.2e1bbfd4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.38685525.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.3f68d5c6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.466bf3a5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.48780812.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.52afe054.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.5d8255f6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.65016b00.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.72dfcf82.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.765dd341.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.8050a321.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.81098e9b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.8852b4bd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.951168b3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.a38d53b5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.a92054d2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.b0655899.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.c0ba93f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.df6f8994.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.fa4b5a44.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.fd240098.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.ff2df76e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/login_icon.ac253b47.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/login_icon.da3766fe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/magnifier.1758c015.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/message_blue.1f39f60f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/message_blue.a8248941.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/message_gray.ea504da1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/textLogo.885f97a3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/useFirebaseAuth.412f9aa3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/useFirestore.90284932.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/Quicksand-Light.a9f4ef65.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/Quicksand-Medium.c1e54885.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/Quicksand-Regular.387d712e.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/ScrollList.f00714e4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/ScrollList.f00714e4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/_plugin-vue_export-helper.a1a6add7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/_plugin-vue_export-helper.a1a6add7.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/default.62629728.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/default.b843f416.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/default.b843f416.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/delete.a0b9d0c0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/devices.b0f0322d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/entry.444a1d40.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/gift_pink.8172d0d5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/gift_yellow.494bf4db.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/heart_pink.07adc358.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/heart_pink.4c6241f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/heart_pink.4c6241f4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/iconLogo.9966e105.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.0c1b9e22.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.0c1b9e22.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.19202906.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.19202906.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.211acbde.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.2ae01be6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.3a2a4477.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.3a2a4477.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.466bf3a5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.4f412785.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.4f412785.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.72dfcf82.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.73d34066.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.73d34066.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.765dd341.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.8050a321.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.81098e9b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.8852b4bd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.951168b3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.987acbff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.987acbff.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.a0621076.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.a0621076.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b0764e99.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b0764e99.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b491b78b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b491b78b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d17d47d9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d17d47d9.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d7dfbcde.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d7dfbcde.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.df6f8994.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.e33656be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.e33656be.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.f1052e0a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.f1052e0a.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.fa4b5a44.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.fd240098.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.ff2df76e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/login_icon.ac253b47.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/login_icon.ac253b47.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/login_icon.da3766fe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/magnifier.1758c015.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_blue.1f39f60f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_blue.1f39f60f.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_blue.a8248941.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_gray.ea504da1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/textLogo.885f97a3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirebaseAuth.10f05fb9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirebaseAuth.10f05fb9.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirestore.aa178ba8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirestore.aa178ba8.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/client.manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/client.manifest.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/server.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/server.mjs.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/imports.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/nuxt.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/client.manifest.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/client.manifest.mjs.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/error-500.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/error-500.mjs.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/nitro-prerenderer.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/nitro-prerenderer.mjs.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/renderer.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/renderer.mjs.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/index.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/index.mjs.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/app.config.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/imports.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/layouts.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/middleware.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/nitro.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/plugins.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/schema.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nuxt/types/vue-shim.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/nitro.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/200.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/Quicksand-Light.a9f4ef65.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/Quicksand-Medium.c1e54885.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/Quicksand-Regular.387d712e.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/ScrollList.6dbbb3a7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/default.62629728.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/default.ee33beae.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/delete.a0b9d0c0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/devices.b0f0322d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/entry.444a1d40.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/entry.73f45475.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-404.18ced855.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-404.35243b35.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-500.1ae2abff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-500.e60962de.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-component.b47d0991.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/gift_pink.8172d0d5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/gift_yellow.494bf4db.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/heart_pink.07adc358.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/heart_pink.4c6241f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/iconLogo.9966e105.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.0572f82c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.211acbde.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.261ac6a6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.2ae01be6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.2e1bbfd4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.38685525.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.3f68d5c6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.466bf3a5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.48780812.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.52afe054.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.5d8255f6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.65016b00.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.72dfcf82.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.765dd341.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.8050a321.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.81098e9b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.8852b4bd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.951168b3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.a38d53b5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.a92054d2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.b0655899.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.c0ba93f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.df6f8994.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.fa4b5a44.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.fd240098.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.ff2df76e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/login_icon.ac253b47.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/login_icon.da3766fe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/magnifier.1758c015.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/message_blue.1f39f60f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/message_blue.a8248941.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/message_gray.ea504da1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/textLogo.885f97a3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/useFirebaseAuth.412f9aa3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/useFirestore.90284932.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/account/change-password/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/account/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/gifts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/liked/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/login/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/messages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/messages/list/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/profiles/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/profiles/new-profile/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.output/public/signup/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2G63SMXQPYdTUJewvIUTfF4pGBy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NZXT.-PC/Documents/ALL/Front/FeedCap&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;W:\\WebStorm 2021.3.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NZXT.-PC\Documents\ALL\Front\FeedCap\plugins" />
+      <recent name="C:\Users\NZXT.-PC\Documents\ALL\Front\FeedCap\middleware" />
+      <recent name="C:\Users\NZXT.-PC\Documents\ALL\Front\FeedCap\pages\login" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc61e5c6-589d-4176-b8eb-05ab82fb39ab" name="Changes" comment="" />
+      <created>1665695213212</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665695213212</updated>
+      <workItem from="1665695225873" duration="3413000" />
+      <workItem from="1665838027467" duration="3195000" />
+      <workItem from="1666003358104" duration="8289000" />
+      <workItem from="1666026772468" duration="20952000" />
+      <workItem from="1666118022410" duration="16872000" />
+      <workItem from="1666249063345" duration="67131000" />
+      <workItem from="1667028101167" duration="69753000" />
+      <workItem from="1667919409626" duration="12907000" />
+      <workItem from="1668069672321" duration="7450000" />
+      <workItem from="1668159837015" duration="41002000" />
+      <workItem from="1668464124185" duration="10913000" />
+      <workItem from="1668540349684" duration="10308000" />
+      <workItem from="1668626166823" duration="3918000" />
+      <workItem from="1668682479475" duration="5729000" />
+      <workItem from="1668715307590" duration="16057000" />
+      <workItem from="1668892613896" duration="11938000" />
+      <workItem from="1668978011971" duration="2690000" />
+      <workItem from="1669028670617" duration="10492000" />
+      <workItem from="1669062855979" duration="56677000" />
+      <workItem from="1669417341483" duration="28221000" />
+      <workItem from="1669639860589" duration="9143000" />
+      <workItem from="1669894836347" duration="26680000" />
+      <workItem from="1670100174808" duration="182000" />
+      <workItem from="1670100369280" duration="480000" />
+      <workItem from="1670100860264" duration="1268000" />
+    </task>
+    <task id="LOCAL-00053" summary="feat: add firebase and pinia">
+      <created>1668464308231</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1668464308231</updated>
+    </task>
+    <task id="LOCAL-00054" summary="feat: add page meta">
+      <created>1668630628015</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630628015</updated>
+    </task>
+    <task id="LOCAL-00055" summary="feat: init auth middleware">
+      <created>1668630660683</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630660683</updated>
+    </task>
+    <task id="LOCAL-00056" summary="feat: init firebase auth">
+      <created>1668630698973</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630698973</updated>
+    </task>
+    <task id="LOCAL-00057" summary="feat: init useStatus">
+      <created>1668630719726</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630719726</updated>
+    </task>
+    <task id="LOCAL-00058" summary="feat: init useFirebase">
+      <created>1668630754532</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630754532</updated>
+    </task>
+    <task id="LOCAL-00059" summary="feat: add runtime Config">
+      <created>1668630785024</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630785025</updated>
+    </task>
+    <task id="LOCAL-00060" summary="feat: add log Out">
+      <created>1668630894596</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630894596</updated>
+    </task>
+    <task id="LOCAL-00061" summary="feat: add log in">
+      <created>1668630917961</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630917961</updated>
+    </task>
+    <task id="LOCAL-00062" summary="feat: add sign up">
+      <created>1668630949803</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630949803</updated>
+    </task>
+    <task id="LOCAL-00063" summary="feat: user global state">
+      <created>1668894666573</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1668894666573</updated>
+    </task>
+    <task id="LOCAL-00064" summary="feat: use firebase">
+      <created>1668894746980</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1668894746980</updated>
+    </task>
+    <task id="LOCAL-00065" summary="feat: use firebase">
+      <created>1668894780686</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1668894780686</updated>
+    </task>
+    <task id="LOCAL-00066" summary="feat: add layout functionality">
+      <created>1668895062588</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1668895062588</updated>
+    </task>
+    <task id="LOCAL-00067" summary="feat: auth middleware">
+      <created>1668895104520</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1668895104520</updated>
+    </task>
+    <task id="LOCAL-00068" summary="refactor: code refactoring">
+      <created>1668895242434</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1668895242435</updated>
+    </task>
+    <task id="LOCAL-00069" summary="feat: add notAuth middleware">
+      <created>1668895535948</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1668895535948</updated>
+    </task>
+    <task id="LOCAL-00070" summary="feat: init notAuth-middleware">
+      <created>1668895553847</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1668895553847</updated>
+    </task>
+    <task id="LOCAL-00071" summary="refactor: code refactoring">
+      <created>1668896366200</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1668896366200</updated>
+    </task>
+    <task id="LOCAL-00072" summary="refactor: code refactoring">
+      <created>1668896595063</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1668896595063</updated>
+    </task>
+    <task id="LOCAL-00073" summary="feat: add global login error">
+      <created>1668983312141</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1668983312141</updated>
+    </task>
+    <task id="LOCAL-00074" summary="feat: init login error store">
+      <created>1668983331827</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1668983331827</updated>
+    </task>
+    <task id="LOCAL-00075" summary="feat: add login errors">
+      <created>1668983365374</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1668983365374</updated>
+    </task>
+    <task id="LOCAL-00076" summary="feat: add new font size">
+      <created>1669492506700</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1669492506700</updated>
+    </task>
+    <task id="LOCAL-00077" summary=".">
+      <created>1669492575789</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1669492575789</updated>
+    </task>
+    <task id="LOCAL-00078" summary="feat: init useFirestore">
+      <created>1669492821760</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1669492821760</updated>
+    </task>
+    <task id="LOCAL-00079" summary="refactor: code refactoring">
+      <created>1669492992338</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1669492992338</updated>
+    </task>
+    <task id="LOCAL-00080" summary="refactor: change file name">
+      <created>1669493027119</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493027119</updated>
+    </task>
+    <task id="LOCAL-00081" summary="feat: add profile button functionality">
+      <created>1669493127020</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493127020</updated>
+    </task>
+    <task id="LOCAL-00082" summary="feat: init firebaseInit">
+      <created>1669493153146</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493153146</updated>
+    </task>
+    <task id="LOCAL-00083" summary="feat: add customer page functionality">
+      <created>1669493229644</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493229644</updated>
+    </task>
+    <task id="LOCAL-00084" summary="feat: add  new-profile page functionality">
+      <created>1669493274477</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493274477</updated>
+    </task>
+    <task id="LOCAL-00085" summary="feat: add  profiles page functionality">
+      <created>1669493307100</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493307100</updated>
+    </task>
+    <task id="LOCAL-00086" summary="refactor: code refactoring">
+      <created>1669493392732</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493392732</updated>
+    </task>
+    <task id="LOCAL-00087" summary="feat: init mainStore">
+      <created>1669493419654</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493419654</updated>
+    </task>
+    <task id="LOCAL-00088" summary="feat: add short-unique-id">
+      <created>1669493481631</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493481631</updated>
+    </task>
+    <task id="LOCAL-00089" summary="feat: add checking of selected profile">
+      <created>1669493573895</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493573895</updated>
+    </task>
+    <task id="LOCAL-00090" summary="delete">
+      <created>1669493683607</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1669493683607</updated>
+    </task>
+    <task id="LOCAL-00091" summary="feat: liked messages page functionality">
+      <created>1669674972096</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1669674972097</updated>
+    </task>
+    <task id="LOCAL-00092" summary="feat: messages list page functionality">
+      <created>1669675006189</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1669675006189</updated>
+    </task>
+    <task id="LOCAL-00093" summary="feat: messages page functionality">
+      <created>1669675025535</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1669675025535</updated>
+    </task>
+    <task id="LOCAL-00094" summary="feat: list comp functionality">
+      <created>1669675059520</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1669675059520</updated>
+    </task>
+    <task id="LOCAL-00095" summary="feat: add functions: sendMessage, getCustomersMessages, moveMessagesToLiked">
+      <created>1669675190433</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1669675190433</updated>
+    </task>
+    <task id="LOCAL-00096" summary="init dist subtree">
+      <created>1670092138787</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1670092138787</updated>
+    </task>
+    <task id="LOCAL-00097" summary="remove dist">
+      <created>1670093129642</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1670093129642</updated>
+    </task>
+    <task id="LOCAL-00098" summary="init icon">
+      <created>1670093141456</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1670093141456</updated>
+    </task>
+    <task id="LOCAL-00099" summary="refactor: changed font sizes from px to rem">
+      <created>1670093215526</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1670093215526</updated>
+    </task>
+    <task id="LOCAL-00100" summary="update">
+      <created>1670093294525</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1670093294525</updated>
+    </task>
+    <task id="LOCAL-00101" summary="feat:  add under construction sign">
+      <created>1670099323059</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1670099323059</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/gh-pages" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add new font size" />
+    <MESSAGE value="." />
+    <MESSAGE value="feat: init useFirestore" />
+    <MESSAGE value="refactor: change file name" />
+    <MESSAGE value="feat: add profile button functionality" />
+    <MESSAGE value="feat: init firebaseInit" />
+    <MESSAGE value="feat: add customer page functionality" />
+    <MESSAGE value="feat: add  new-profile page functionality" />
+    <MESSAGE value="feat: add  profiles page functionality" />
+    <MESSAGE value="refactor: code refactoring" />
+    <MESSAGE value="feat: init mainStore" />
+    <MESSAGE value="feat: add short-unique-id" />
+    <MESSAGE value="feat: add checking of selected profile" />
+    <MESSAGE value="delete" />
+    <MESSAGE value="feat: liked messages page functionality" />
+    <MESSAGE value="feat: messages list page functionality" />
+    <MESSAGE value="feat: messages page functionality" />
+    <MESSAGE value="feat: list comp functionality" />
+    <MESSAGE value="feat: add functions: sendMessage, getCustomersMessages, moveMessagesToLiked" />
+    <MESSAGE value="init dist subtree" />
+    <MESSAGE value="remove dist" />
+    <MESSAGE value="init icon" />
+    <MESSAGE value="refactor: changed font sizes from px to rem" />
+    <MESSAGE value="update" />
+    <MESSAGE value="feat:  add under construction sign" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  add under construction sign" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+</project>
