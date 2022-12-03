@@ -1,1 +1,0 @@
-import{q as s,C as r}from"./entry.6077f5e8.js";import{a as n,u}from"./mainStore.bf01849b.js";import"./short-unique-id.01c04ed3.js";const l=async()=>{const{$auth:t}=s();await t.signOut();const e=n(),a=u();e.setStatusToLoggedOut(),a.resetProfile(),r("/")},m=()=>{const{$auth:t}=s();return new Promise((e,a)=>{t.onAuthStateChanged(o=>{if(o)return e(o)})})};export{m as g,l};
