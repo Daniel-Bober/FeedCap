@@ -4,232 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc61e5c6-589d-4176-b8eb-05ab82fb39ab" name="Changes" comment="feat:  add under construction sign">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/app.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/components.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/Quicksand-Light.a9f4ef65.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/Quicksand-Medium.c1e54885.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/Quicksand-Regular.387d712e.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/ScrollList.6dbbb3a7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/default.62629728.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/default.ee33beae.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/delete.a0b9d0c0.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/devices.b0f0322d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/entry.444a1d40.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/entry.73f45475.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-404.18ced855.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-404.35243b35.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-500.1ae2abff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-500.e60962de.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/error-component.b47d0991.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/gift_pink.8172d0d5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/gift_yellow.494bf4db.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/heart_pink.07adc358.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/heart_pink.4c6241f4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/iconLogo.9966e105.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.0572f82c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.211acbde.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.261ac6a6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.2ae01be6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.2e1bbfd4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.38685525.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.3f68d5c6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.466bf3a5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.48780812.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.52afe054.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.5d8255f6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.65016b00.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.72dfcf82.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.765dd341.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.8050a321.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.81098e9b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.8852b4bd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.951168b3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.a38d53b5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.a92054d2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.b0655899.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.c0ba93f4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.df6f8994.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.fa4b5a44.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.fd240098.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/index.ff2df76e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/login_icon.ac253b47.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/login_icon.da3766fe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/magnifier.1758c015.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/message_blue.1f39f60f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/message_blue.a8248941.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/message_gray.ea504da1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/textLogo.885f97a3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/useFirebaseAuth.412f9aa3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/client/_nuxt/useFirestore.90284932.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/Quicksand-Light.a9f4ef65.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/Quicksand-Medium.c1e54885.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/Quicksand-Regular.387d712e.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/ScrollList.f00714e4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/ScrollList.f00714e4.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/_plugin-vue_export-helper.a1a6add7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/_plugin-vue_export-helper.a1a6add7.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/default.62629728.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/default.b843f416.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/default.b843f416.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/delete.a0b9d0c0.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/devices.b0f0322d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/entry.444a1d40.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/gift_pink.8172d0d5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/gift_yellow.494bf4db.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/heart_pink.07adc358.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/heart_pink.4c6241f4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/heart_pink.4c6241f4.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/iconLogo.9966e105.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.0c1b9e22.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.0c1b9e22.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.19202906.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.19202906.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.211acbde.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.2ae01be6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.3a2a4477.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.3a2a4477.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.466bf3a5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.4f412785.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.4f412785.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.72dfcf82.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.73d34066.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.73d34066.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.765dd341.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.8050a321.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.81098e9b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.8852b4bd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.951168b3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.987acbff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.987acbff.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.a0621076.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.a0621076.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b0764e99.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b0764e99.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b491b78b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.b491b78b.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d17d47d9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d17d47d9.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d7dfbcde.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.d7dfbcde.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.df6f8994.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.e33656be.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.e33656be.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.f1052e0a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.f1052e0a.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.fa4b5a44.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.fd240098.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/index.ff2df76e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/login_icon.ac253b47.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/login_icon.ac253b47.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/login_icon.da3766fe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/magnifier.1758c015.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_blue.1f39f60f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_blue.1f39f60f.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_blue.a8248941.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/message_gray.ea504da1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/textLogo.885f97a3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirebaseAuth.10f05fb9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirebaseAuth.10f05fb9.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirestore.aa178ba8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/_nuxt/useFirestore.aa178ba8.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/client.manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/client.manifest.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/server.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/dist/server/server.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/imports.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/nuxt.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/client.manifest.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/client.manifest.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/error-500.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/error-500.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/nitro-prerenderer.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/nitro-prerenderer.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/renderer.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/chunks/renderer.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/prerender/index.mjs.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/app.config.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/imports.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/layouts.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/middleware.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/nitro.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/plugins.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/schema.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.nuxt/types/vue-shim.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/nitro.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/200.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/Quicksand-Light.a9f4ef65.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/Quicksand-Medium.c1e54885.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/Quicksand-Regular.387d712e.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/ScrollList.6dbbb3a7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/default.62629728.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/default.ee33beae.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/delete.a0b9d0c0.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/devices.b0f0322d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/entry.444a1d40.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/entry.73f45475.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-404.18ced855.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-404.35243b35.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-500.1ae2abff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-500.e60962de.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/error-component.b47d0991.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/gift_pink.8172d0d5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/gift_yellow.494bf4db.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/heart_pink.07adc358.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/heart_pink.4c6241f4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/iconLogo.9966e105.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.0572f82c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.211acbde.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.261ac6a6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.2ae01be6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.2e1bbfd4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.38685525.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.3f68d5c6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.466bf3a5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.48780812.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.52afe054.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.5d8255f6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.65016b00.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.72dfcf82.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.765dd341.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.8050a321.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.81098e9b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.8852b4bd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.951168b3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.a38d53b5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.a92054d2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.b0655899.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.c0ba93f4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.df6f8994.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.fa4b5a44.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.fd240098.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/index.ff2df76e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/login_icon.ac253b47.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/login_icon.da3766fe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/magnifier.1758c015.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/message_blue.1f39f60f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/message_blue.a8248941.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/message_gray.ea504da1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/textLogo.885f97a3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/useFirebaseAuth.412f9aa3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/_nuxt/useFirestore.90284932.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/account/change-password/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/account/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/gifts/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/liked/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/login/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/messages/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/messages/list/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/profiles/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/profiles/new-profile/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.output/public/signup/index.html" afterDir="false" />
+    <list default="true" id="fc61e5c6-589d-4176-b8eb-05ab82fb39ab" name="Changes" comment="delete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,14 +97,7 @@
       <workItem from="1669894836347" duration="26680000" />
       <workItem from="1670100174808" duration="182000" />
       <workItem from="1670100369280" duration="480000" />
-      <workItem from="1670100860264" duration="1268000" />
-    </task>
-    <task id="LOCAL-00053" summary="feat: add firebase and pinia">
-      <created>1668464308231</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1668464308231</updated>
+      <workItem from="1670100860264" duration="2033000" />
     </task>
     <task id="LOCAL-00054" summary="feat: add page meta">
       <created>1668630628015</created>
@@ -665,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670099323059</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="delete">
+      <created>1670102560751</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1670102560751</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +459,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/gh-pages" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -708,7 +485,6 @@
     <MESSAGE value="feat: init mainStore" />
     <MESSAGE value="feat: add short-unique-id" />
     <MESSAGE value="feat: add checking of selected profile" />
-    <MESSAGE value="delete" />
     <MESSAGE value="feat: liked messages page functionality" />
     <MESSAGE value="feat: messages list page functionality" />
     <MESSAGE value="feat: messages page functionality" />
@@ -720,7 +496,8 @@
     <MESSAGE value="refactor: changed font sizes from px to rem" />
     <MESSAGE value="update" />
     <MESSAGE value="feat:  add under construction sign" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  add under construction sign" />
+    <MESSAGE value="delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
