@@ -1,11 +1,13 @@
 export default defineNuxtConfig({
     ssr: false,
     target: 'static',
-    router: {
-        base: '/FeedCap/'
-    },
+    // router: {
+    //     base: '/FeedCap/'
+    // },
     app: {
-      baseURL: './'
+      baseURL: '/FeedCap',
+        cdnURL: './',
+        buildAssetsDir: '/_nuxt'
     },
     css: ["@/assets/style/main.scss"],
     vite: {
