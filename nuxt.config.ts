@@ -4,9 +4,9 @@ export default defineNuxtConfig({
     // router: {
     //     base: '/FeedCap/'
     // },
-    app: {
-      baseURL: './'
-    },
+    // app: {
+    //   baseURL: './'
+    // },
     css: ["@/assets/style/main.scss"],
     vite: {
         css: {
