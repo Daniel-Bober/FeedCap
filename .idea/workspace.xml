@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc61e5c6-589d-4176-b8eb-05ab82fb39ab" name="Changes" comment="delete">
+    <list default="true" id="fc61e5c6-589d-4176-b8eb-05ab82fb39ab" name="Changes" comment="feat: push dir">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,14 +97,7 @@
       <workItem from="1669894836347" duration="26680000" />
       <workItem from="1670100174808" duration="182000" />
       <workItem from="1670100369280" duration="480000" />
-      <workItem from="1670100860264" duration="2033000" />
-    </task>
-    <task id="LOCAL-00054" summary="feat: add page meta">
-      <created>1668630628015</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1668630628015</updated>
+      <workItem from="1670100860264" duration="5255000" />
     </task>
     <task id="LOCAL-00055" summary="feat: init auth middleware">
       <created>1668630660683</created>
@@ -442,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670102560751</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="feat: push dir">
+      <created>1670103060434</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1670103060434</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add new font size" />
     <MESSAGE value="." />
     <MESSAGE value="feat: init useFirestore" />
     <MESSAGE value="refactor: change file name" />
@@ -497,7 +496,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="feat:  add under construction sign" />
     <MESSAGE value="delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete" />
+    <MESSAGE value="feat: push dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: push dir" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
