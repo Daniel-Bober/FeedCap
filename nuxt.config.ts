@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     //     base: '/FeedCap/'
     // },
     app: {
-      baseURL: './FeedCap'
+      baseURL: './'
     },
     css: ["@/assets/style/main.scss"],
     vite: {
