@@ -1,6 +1,8 @@
 <template>
   <div class="home-page">
 
+    <div class="under-construction">Under construction</div>
+
     <section class="head-section">
 
       <div class="logo-section">
@@ -13,12 +15,49 @@
     </section>
 
     <section class="content-section">
-     <div class="center-wrapper">
-       <p>
-         FeedCup is a better way to communicate with your customers, the way your
-         customers can share their thoughts and ideas about your business with you
-       </p>
-     </div>
+
+      <div class="content-group">
+
+        <span class="pink-block"></span>
+
+        <div class="text-group">
+          <div class="header">People very often have great ideas or insights</div>
+          <div class="description ">FeedCap is a simple way to give your customers the opportunity to share these ideas</div>
+        </div>
+
+
+      </div>
+
+      <div class="icons-group">
+
+        <div class="group">
+          <img src="assets/images/icons/improve.svg" alt="improve icon">
+
+          <div class="text-group">
+            <div class="header">Improve</div>
+            <div class="description">Improve your business with the help of your customers</div>
+          </div>
+        </div>
+
+        <div class="group">
+          <img src="assets/images/icons/feather.svg" alt="feather icon">
+
+          <div class="text-group">
+            <div class="header">Light</div>
+            <div class="description">Light and clean design, only the most important features</div>
+          </div>
+        </div>
+
+        <div class="group">
+          <img src="assets/images/icons/gift_icon.svg" alt="gift icon">
+
+          <div class="text-group">
+            <div class="header">Gifts</div>
+            <div class="description">Encourage customers to share ideas by rewarding the best ones</div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
 
@@ -35,56 +74,114 @@ definePageMeta({
 
 <style lang="scss" scoped>
 .home-page {
-
   height: 200vh;
-}
 
-.head-section {
-  height: 90vh;
-  position: relative;
-
-  .logo-section {
-    display: inline-block;
+  .under-construction {
     position: absolute;
-    left: 200px;
-    top: 230px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: $font-36px;
+    color: $lightGray;
+    text-align: center;
+  }
 
-    p{
-      width: 400px;
-      margin-top: 70px;
+  .head-section {
+    height: 90vh;
+    position: relative;
+
+    .logo-section {
+      display: inline-block;
+      position: absolute;
+      left: 200px;
+      top: 230px;
+
+      p{
+        width: 400px;
+        margin-top: 60px;
+        margin-left: 100px;
+        font-size: $font-24px;
+        color: $lightGray;
+      }
+    }
+
+    .text-logo {
+      width: 450px;
+    }
+
+    .devices-image {
+      width: 950px;
+      position: absolute;
+      right: 100px;
+      bottom: 220px;
+
+    }
+  }
+
+  .content-section {
+
+    .content-group {
+      display: flex;
       margin-left: 200px;
-      font-size: $font-24px;
-      color: $lightGray;
+
+      .pink-block {
+        width: 8px;
+        height: 80px;
+        background-color: $pink;
+        position: relative;
+        top: 6px;
+        flex-shrink: 0;
+      }
+
+      .text-group {
+        margin-left: 75px;
+
+        .header {
+          width: 475px;
+          font-size: $font-36px;
+          margin-bottom: 30px;
+        }
+
+        .description {
+          width: 600px;
+          font-size: $font-24px;
+          color: $lightGray;
+        }
+      }
+
+
     }
-  }
 
-  .text-logo {
-    width: 450px;
-  }
+    .icons-group {
+      display: flex;
+      justify-content: space-between;
+      margin: 350px 200px 0 200px;
 
-  .devices-image {
-    width: 950px;
-    position: absolute;
-    right: 100px;
-    bottom: 220px;
 
+      .group {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+
+        .text-group {
+          margin-left: 25px;
+
+          .header {
+            font-size: $font-32px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+          }
+
+          .description {
+            width: 220px;
+            color: $lightGray;
+          }
+        }
+      }
+    }
   }
 }
 
-.content-section {
 
-  .center-wrapper {
-    display: flex;
-    justify-content: center;
-
-    p {
-      width: 550px;
-      font-size: $font-24px;
-      color: $offWhite;
-      text-align: center;
-    }
-  }
-
-}
 
 </style>
