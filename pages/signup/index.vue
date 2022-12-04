@@ -13,9 +13,9 @@
       </div>
 
 
-      <NuxtLink class="signup-icon" @click="signUp">
-        <img src="~/assets/images/icons/login_icon.svg" alt="sign up icon">
-      </NuxtLink>
+      <button class="signup-icon" @click="">
+        <img src="@/assets/images/icons/login_icon.svg" alt="sign up icon">
+      </button>
 
 
       <NuxtLink class="login-btn" to="/login">Log in</NuxtLink>
