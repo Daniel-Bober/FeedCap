@@ -1,7 +1,11 @@
 
 export default defineNuxtConfig({
     ssr: false,
-    css: ["~/assets/style/main.scss"],
+    css: ["@/assets/style/main.scss"],
+    target: 'static',
+    router: {
+        base: '/FeedCap/'
+    },
     vite: {
         css: {
             preprocessorOptions: {
