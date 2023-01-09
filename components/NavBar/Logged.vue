@@ -183,7 +183,7 @@
     margin-left: 60px;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     cursor: pointer;
   }
 
