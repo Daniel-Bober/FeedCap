@@ -21,7 +21,7 @@
         <span class="pink-block"></span>
 
         <div class="text-group">
-          <div class="header">People very often have great ideas or insights</div>
+          <div class="header">People often have great ideas or insights</div>
           <div class="description ">FeedCap is a simple way to give your customers the opportunity to share these ideas</div>
         </div>
 
