@@ -6,15 +6,15 @@
     <span class="customer-message" role="textbox">{{ customerMessage }}</span>
 
     <span class="date">{{ date }}</span>
-    
-    <button class="like-gift-button">
-      <img v-if="likedMode" src="~/assets/images/icons/heart_pink.svg" alt="like button">
-      <img v-else src="~/assets/images/icons/gift_pink.svg" alt="gift button">
+
+    <button class="like-gift-button" @click="buttonClicked">
+      <img v-if="likedMode" src="@/assets/images/icons/heart_pink.svg" alt="like button">
+      <img v-else src="@/assets/images/icons/gift_pink.svg" alt="gift button">
     </button>
 
 
     <button class="dots-menu">
-      <svg width="6" height="20" viewBox="0 0 6 20"  xmlns="http://www.w3.org/2000/svg">
+      <svg width="6" height="20" viewBox="0 0 6 20" xmlns="http://www.w3.org/2000/svg">
         <path
             d="M3.42725 5.18051C2.04645 5.18051 0.927246 4.10069 0.927246 2.76848C0.927246 1.43626 2.04645 0.356445 3.42725 0.356445C4.80805 0.356445 5.92725 1.43626 5.92725 2.76848C5.92725 4.10069 4.80805 5.18051 3.42725 5.18051ZM3.42725 12.4166C2.04645 12.4166 0.927246 11.3368 0.927246 10.0046C0.927246 8.67236 2.04645 7.59254 3.42725 7.59254C4.80805 7.59254 5.92725 8.67236 5.92725 10.0046C5.92725 11.3368 4.80805 12.4166 3.42725 12.4166ZM3.42725 19.6527C2.04645 19.6527 0.927245 18.5729 0.927245 17.2407C0.927245 15.9085 2.04645 14.8286 3.42725 14.8286C4.80805 14.8286 5.92725 15.9085 5.92725 17.2407C5.92725 18.5729 4.80805 19.6527 3.42725 19.6527Z"/>
       </svg>
@@ -24,6 +24,8 @@
 
 
 <script setup lang='ts'>
+const emit = defineEmits(['buttonClicked']);
+
 const props = defineProps({
   likedMode: {
     type: Boolean,
@@ -32,7 +34,11 @@ const props = defineProps({
   customerName: String,
   customerMessage: String,
   date: String
-})
+});
+
+function buttonClicked() {
+  emit('buttonClicked');
+}
 </script>
 
 
