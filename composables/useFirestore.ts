@@ -79,11 +79,9 @@ export const getCustomersMessages = async (messageType) => {
             break;
     }
 
-
-    const q = query(collection($firestore, user.email, mainStore.selectedProfile, docName));
+    const q =  query(collection($firestore, user.email, mainStore.selectedProfile, docName));
     const querySnapshot = await getDocs(q);
     const messagesData = [[], []]
-
 
     querySnapshot.forEach((doc) => {
         messagesData[0].push(doc.data());
@@ -109,51 +107,4 @@ export const moveMessageToLiked = async (message, messageID) => {
         message: message.message,
         date: message.date
     });
-
-}
-
-
-
-
-
-
-//tests
-export const createUserCollection = async (email) => {
-    const {$firestore} = useNuxtApp()
-
-    const docRef = doc($firestore, email,  'pizza', 'messages', 'tomek@gamil.com', 'customerMessage');
-
-    await setDoc(docRef, {
-        name: 'tomek',
-        message:'hi you cos tam jakaś wiadomość',
-        date: '29.11.2022'
-    });
-
-    // await setDoc(doc($firestore, email, 'profiles'), {});
-
-    // try {
-    //     // const docRef = await addDoc(collection($firestore, email), {});
-    //
-    //
-    //
-    //     // console.log("Document written with ID: ", docRef.id);
-    // }
-
-}
-
-export const addProfile = async (profileName) => {
-    const {$firestore} = useNuxtApp()
-    const { $auth } = useNuxtApp()
-
-}
-
-export const updateDocument = async () => {
-    const {$firestore} = useNuxtApp()
-    const { $auth } = useNuxtApp()
-
-    const docRef = doc($firestore, $auth.currentUser.email, 'profiles');
-
-    await updateDoc(docRef, {
-        message: 1,
-    })
 }
