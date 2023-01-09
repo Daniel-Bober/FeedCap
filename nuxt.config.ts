@@ -1,4 +1,17 @@
 export default defineNuxtConfig({
+    head: {
+        title: 'FeedCap',
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'my website description'
+            }
+        ],
+        // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    },
     ssr: false,
     target: 'static',
     // router: {
@@ -15,8 +28,8 @@ export default defineNuxtConfig({
             preprocessorOptions: {
                 scss: {
                     additionalData:
-                        '@import "~/assets/style/variables.scss"; ' +
-                        '@import "~/assets/style/mixins.scss";',
+                        '@import "@/assets/style/variables.scss"; ' +
+                        '@import "@/assets/style/mixins.scss";',
                 },
             },
         },
@@ -33,9 +46,11 @@ export default defineNuxtConfig({
         ],
     ],
     runtimeConfig: {
-        apiSecret: process.env.FIREBASE_API_KEY,
+        firestoreSecretKey: process.env.FIREBASE_API_KEY,
+        sendGridSecretKey: process.env.SENDGRID_API_KEY,
         public: {
-            apiBase: process.env.FIREBASE_API_KEY,
+            firestoreBaseKey: process.env.FIREBASE_API_KEY,
+            sendGridBaseKey: process.env.SENDGRID_API_KEY,
         }
     },
 })
