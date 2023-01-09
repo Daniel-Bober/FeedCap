@@ -6,7 +6,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     const config = useRuntimeConfig();
 
     const firebaseConfig = {
-        apiKey: config.public.apiBase,
+        apiKey: config.public.firestoreBaseKey,
         projectId: "feedcap",
     };
 
