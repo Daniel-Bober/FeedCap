@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     //     base: '/FeedCap/'
     // },
     app: {
-      baseURL: '/FeedCap',
+      baseURL: '/FeedCap/',
         cdnURL: './',
         buildAssetsDir: '/_nuxt'
     },
