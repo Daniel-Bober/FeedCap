@@ -49,7 +49,7 @@ const giveButtonClassName = computed(() => {
 })
 
 function closePopUpWindow() {
-  if(!isEmailSending) {
+  if(!isEmailSending.value) {
     emit("closeWindow");
   }
 }
