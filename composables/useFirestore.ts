@@ -1,13 +1,13 @@
-import {collection, getDocs, query, doc, setDoc, updateDoc, where, getDoc, deleteDoc} from "firebase/firestore";
+import {collection, getDocs, query, doc, setDoc, getDoc, deleteDoc} from "firebase/firestore";
 
-import {getCurrentUser} from "~/composables/useFirebaseAuth";
+import {getCurrentUser} from "@/composables/useFirebaseAuth";
 import ShortUniqueId from "short-unique-id";
-import {useMainStore} from "~/stores/mainStore";
+import {useMainStore} from "@/stores/mainStore";
 
 export const initUser = async (email, username) => {
     const {$firestore} = useNuxtApp();
-    const createUID = new ShortUniqueId({length: 8})
-    const uid = createUID()
+    const createUID = new ShortUniqueId({length: 8});
+    const uid = createUID();
 
     await setDoc(doc($firestore, email, 'userInfo'), {
         name: username,
