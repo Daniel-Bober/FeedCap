@@ -39,14 +39,17 @@
 </template>
 
 <script setup lang='ts'>
-const messagesData = ref(await getCustomersMessages(1));// 1-'messages', 2-'likedMessages',
+import firestoreProfileColNames from "~/enums/firestoreProfileColNames";
+
+const messagesData = ref(await getCustomersMessages(firestoreProfileColNames.Messages));
 const messages = ref(messagesData.value[0])
 const messagesID = ref(messagesData.value[1])
 
 const moveToLiked = async () => {
-  await moveMessageToLiked(messages.value[0], messagesID.value[0])
+  await moveMessageToNewCol(firestoreProfileColNames.LikedMessages, messages.value[0])
   messages.value.splice(0, 1)
   messagesID.value.splice(0, 1)
+  await deleteDocFromCollection(firestoreProfileColNames.Messages , messagesID.value[0]);
 }
 
 definePageMeta({

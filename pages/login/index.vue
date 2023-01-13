@@ -17,7 +17,7 @@
         <NuxtLink to="/forgot-password">Forgot password</NuxtLink>
       </div>
 
-      <button class="login-icon" @click="">
+      <button class="login-icon" @click="logIn">
         <img src="~/assets/images/icons/login_icon.svg" alt="login icon">
       </button>
 

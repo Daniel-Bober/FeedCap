@@ -16,8 +16,9 @@
 
 <script setup lang='ts'>
 import ScrollList from "~/components/ListComp/ScrollList.vue";
+import firestoreProfileColNames from "~/enums/firestoreProfileColNames";
 
-const messagesData = ref(await getCustomersMessages(1));// 1-'messages', 2-'likedMessages',
+const messagesData = ref(await getCustomersMessages(firestoreProfileColNames.Messages));
 const likedMessages = ref(messagesData.value[0])
 const likedMessagesID = ref(messagesData.value[1])
 

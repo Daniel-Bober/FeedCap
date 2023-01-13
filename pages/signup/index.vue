@@ -13,7 +13,7 @@
       </div>
 
 
-      <button class="signup-icon" @click="">
+      <button class="signup-icon" @click="signUp">
         <img src="@/assets/images/icons/login_icon.svg" alt="sign up icon">
       </button>
 

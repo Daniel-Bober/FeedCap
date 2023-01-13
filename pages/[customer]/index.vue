@@ -79,15 +79,15 @@
 <script setup lang='ts'>
 
 
-const route = useRoute()
+const route = useRoute();
 
-const sendButtonClassName = ref("send-button")
+const sendButtonClassName = ref("send-button");
 
 const linkData = route.path.substring(1).split('-');
 const serviceProfileName = linkData[0];
 const serviceID = (linkData[1]);
 
-const customerName = ref()
+const customerName = ref();
 const customerEmail = ref();
 let customerMessage = null;
 
@@ -99,7 +99,7 @@ const saveCustomerMessage = (e) => {
 const sendCustomerMessage = async () => {
   sendButtonClassName.value ='send-button clicked'
 
-  const email = await findServiceEmail(serviceID)
+  const email = await findServiceEmail(serviceID);
 
   const date = new Date();
   const dd = String(date.getDate()).padStart(2, '0');
