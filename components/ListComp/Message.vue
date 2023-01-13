@@ -33,11 +33,17 @@ const props = defineProps({
   },
   customerName: String,
   customerMessage: String,
-  date: String
+  date: String,
+  messageId: String
 });
 
 function buttonClicked() {
-  emit('buttonClicked');
+  if(props.likedMode) {
+    emit('buttonClicked');
+  }
+  else emit('buttonClicked', props.messageId);
+
+
 }
 </script>
 
