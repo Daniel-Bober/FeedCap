@@ -4,6 +4,8 @@ import {getCurrentUser} from "@/composables/useFirebaseAuth";
 import ShortUniqueId from "short-unique-id";
 import {useMainStore} from "@/stores/mainStore";
 
+import firestoreProfileColNames from "~/enums/firestoreProfileColNames";
+
 export const initUser = async (email, username) => {
     const {$firestore} = useNuxtApp();
     const createUID = new ShortUniqueId({length: 8});
@@ -55,7 +57,7 @@ export const getProfiles = async  () => {
 export const sendMessage = async (email, profileName, customerEmail, customerName, message, date, dateNow) => {
     const {$firestore} = useNuxtApp();
 
-    await setDoc(doc($firestore, email, profileName, 'messages', dateNow), {
+    await setDoc(doc($firestore, email, profileName, firestoreProfileColNames.Messages, dateNow), {
         customerEmail: customerEmail,
         customerName: customerName,
         message: message,
@@ -63,21 +65,11 @@ export const sendMessage = async (email, profileName, customerEmail, customerNam
     });
 };
 
-export const getCustomersMessages = async (messageType) => {
+export const getCustomersMessages = async (docName) => {
     const {$firestore} = useNuxtApp();
     const mainStore = useMainStore();
     const user:any = await getCurrentUser();
-    let docName = null;
 
-    switch (messageType) {
-        case 1:
-            docName = 'messages'
-            break;
-
-        case 2:
-            docName = 'likedMessages'
-            break;
-    }
 
     const q =  query(collection($firestore, user.email, mainStore.selectedProfile, docName));
     const querySnapshot = await getDocs(q);
@@ -88,23 +80,47 @@ export const getCustomersMessages = async (messageType) => {
         messagesData[1].push(doc.id);
     });
 
-
     return messagesData
 };
 
 
-export const moveMessageToLiked = async (message, messageID) => {
+export const moveMessageToNewCol = async (colName, message) => {
     const {$firestore} = useNuxtApp();
     const mainStore = useMainStore();
     const user:any = await getCurrentUser();
 
-    await deleteDoc(doc($firestore, user.email, mainStore.selectedProfile, 'messages', messageID));
-
     const dateNow = Date.now().toString()
-    await setDoc(doc($firestore, user.email, mainStore.selectedProfile, 'likedMessages', dateNow), {
+
+    const data = {
         customerEmail: message.customerEmail,
         customerName: message.customerName,
         message: message.message,
         date: message.date
-    });
+    }
+
+
+    switch (colName) {
+        case firestoreProfileColNames.LikedMessages:
+            await setDoc(doc($firestore, user.email, mainStore.selectedProfile, colName, dateNow), data);
+            break;
+
+        case firestoreProfileColNames.Gifts:
+            await setDoc(doc($firestore, user.email, mainStore.selectedProfile, colName, dateNow), {
+                ...data,
+                giftCode: message.giftCode,
+                gift: message.gift,
+                securityCode: message.securityCode,
+                isGiftActive: message.isGiftActive
+            });
+            break;
+    }
+}
+
+
+export const deleteDocFromCollection = async(collectionName, docID) => {
+    const {$firestore} = useNuxtApp();
+    const mainStore = useMainStore();
+    const user:any = await getCurrentUser();
+
+    await deleteDoc(doc($firestore, user.email, mainStore.selectedProfile, collectionName, docID));
 }
