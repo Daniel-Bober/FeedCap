@@ -1,6 +1,6 @@
 ## Opis projektu
 
-Jest to aplikacja dzięki której przedsiębiorcy mogą zbierać opinie i pomysły od klientów na usprawnienie ich działalności, najlepsze pomysły były by wynagradzane w formie rabatów lub innych benefitów. 
+Jest to aplikacja dzięki której przedsiębiorcy będą mogli zbierać opinie i pomysły od klientów na usprawnienie ich działalności a najlepsze będą nagradzane w formie rabatów lub innych benefitów
 
 <br>
 <br>
@@ -20,6 +20,6 @@ Jest to aplikacja dzięki której przedsiębiorcy mogą zbierać opinie i pomys�
 
 ## Demo
 
-Demo - https://daniel-bober.github.io/FeedCap/
+https://daniel-bober.github.io/FeedCap/
 
 chwilowo opcje logowania i rejestracji zostały wyłączone
