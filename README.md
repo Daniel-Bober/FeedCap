@@ -9,7 +9,7 @@ Jest to aplikacja dzięki której przedsiębiorcy mogą zbierać opinie i pomys�
 
 - Nagrodzeni klienci będą informowani drogą mailową.
 
-- Instrukcja dla klientów jak zostawić swój pomysł wraz z informacją o potencjalnych nagrodach i QR kodem przekierwującym do strony na której można zostawić swój pomysł   lub uwagę będzie umieszczona w lokalu w dobrze widocznych miejscach np. w formie wizytówek na stołach lub plakatów na ścianach.
+- Instrukcja dla klientów jak zostawić swój pomysł wraz z informacją o potencjalnych nagrodach i QR kodem przekierowującym do strony na której można zostawić swój pomysł   lub uwagę będzie umieszczona w lokalu w dobrze widocznych miejscach np. w formie wizytówek na stołach lub plakatów na ścianach.
  
 - Wszystkie wiadomości trafiają na profil utworzony przez użytkownika gdzie można je łatwo posortować lub nagrodzić najlepsze z nich.
 
