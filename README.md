@@ -20,6 +20,6 @@ Jest to aplikacja dzięki której przedsiębiorcy będą mogli zbierać opinie i
 
 ## Demo
 
-:point_right: https://daniel-bober.github.io/FeedCap/
+https://daniel-bober.github.io/FeedCap/
 
 chwilowo opcje logowania i rejestracji zostały wyłączone
